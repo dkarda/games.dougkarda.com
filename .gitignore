@@ -1,3 +1,9 @@
+.well-known*
+cgi-bin*
+.env
+package-lock.json
+package.json
+
 # Logs
 logs
 *.log
