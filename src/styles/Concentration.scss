@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+
+#concentration-wrap {
+    margin: 0;
+    height: 100vh;
+    font-size: 1.5em;
+    text-align: center;
+    background: #0C2340;
+    color: #fff;
+    padding: 0 20px;
+
+    & h1, h3 {
+        margin: 0 auto;
+        padding: 5px 0;
+    }
+    
+    & button {
+        background-color: #FFF;
+        border: 5px solid #fff;
+        border-color: hsl(200, 100%, 30%);
+        padding: 6px 12px;
+        border-radius: 25px;
+        color: hsl(200, 100%, 30%);
+        font-weight: 800;
+        cursor: pointer;
+        font-size: 1em;
+        text-transform: uppercase;        
+        &:hover {
+            background-color: hsl(200, 100%, 30%);
+            border-color: hsl(200, 100%, 30%);
+            color: #fff;
+        }        
+    }
+
+    & .card-grid {
+        margin: 10px auto 0;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        place-items: center;
+        max-width: 750px;
+    }
+    
+    & .concentration-card {
+        max-width: 150px;
+        max-height: 150px;
+        position: relative;
+        border: 3px solid #AAA;
+        & img {
+            max-width: 150px;
+            aspect-ratio: 1;
+            width: 100%;
+            display: block;
+            padding: 3px;
+        }
+        & img.concentration-card-front {
+            position: absolute;
+            transform: rotateY(90deg);
+            transition: all ease-in 0.2s;
+            background-color: #DDD;
+        }
+        
+        & .flipped img.concentration-card-front {
+            transform: rotateY(0deg);
+            transition-delay: 0.2s;
+        }
+        
+        & img.concentration-card-back {
+            transition: all ease-in 0.2s;
+            transition-delay: 0.2s;
+        }
+        
+        & .flipped img.concentration-card-back {
+            transform: rotateY(90deg);
+            transition-delay: 0;
+        }
+    }
+}
