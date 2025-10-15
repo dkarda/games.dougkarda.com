@@ -1,4 +1,4 @@
-const ConcentrationCard = ({ card, handleChoice, flipped, disabled, cardImgBack }) => {
+const ConcentrationCard = ({ card, handleChoice, flipped, disabled, cardBackImg, theme }) => {
 
     const handleCardClick = () => {
         if (!disabled) {
@@ -11,8 +11,8 @@ const ConcentrationCard = ({ card, handleChoice, flipped, disabled, cardImgBack 
         <div className={flipped ? "flipped" : ""}>
             <img src={card.src} className="concentration-card-front" alt="card front" />
             <img 
-                src={cardImgBack}
-                className="concentration-card-back"
+                src={cardBackImg}
+                className={`concentration-card-back ${theme}`}
                 onClick={handleCardClick}
                 alt="card back" />
         </div>

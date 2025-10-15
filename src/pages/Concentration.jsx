@@ -64,10 +64,32 @@ const cardImagesNLWest = [
   { src: imgBaseUrlBaseball + "padres.svg", matched: false },
   { src: imgBaseUrlBaseball + "rockies.svg", matched: false },
 ];
+const cardImagesHockey = [
+  { src: imgBaseUrlHockey + "rangers.svg", matched: false },
+  { src: imgBaseUrlHockey + "redwings.svg", matched: false },
+  { src: imgBaseUrlHockey + "blackhawks.svg", matched: false },
+  { src: imgBaseUrlHockey + "mapleleafs.svg", matched: false },
+  { src: imgBaseUrlHockey + "bruins.svg", matched: false },
+  { src: imgBaseUrlHockey + "canadiens.svg", matched: false },
+  { src: imgBaseUrlHockey + "hurricanes.svg", matched: false },
+  { src: imgBaseUrlHockey + "bluejackets.svg", matched: false },
+  { src: imgBaseUrlHockey + "stars.svg", matched: false },
+  { src: imgBaseUrlHockey + "penguins.svg", matched: false },
+  { src: imgBaseUrlHockey + "lightning.svg", matched: false },
+  { src: imgBaseUrlHockey + "sharks.svg", matched: false },
+  { src: imgBaseUrlHockey + "goldenknights.svg", matched: false },
+  { src: imgBaseUrlHockey + "mammoth.svg", matched: false },
+  { src: imgBaseUrlHockey + "oilers.svg", matched: false },
+];
 const cardImagesRockAlbums = [
-  { src: imgBaseUrlRockAlbums + "eagles-hotelcalifornia.avif", matched: false },
+  { src: imgBaseUrlRockAlbums + "aerosmith-toysintheattic.webp", matched: false },
+  { src: imgBaseUrlRockAlbums + "eagles-hotelcalifornia.webp", matched: false },
   { src: imgBaseUrlRockAlbums + "led-zeppelin-iv.webp", matched: false },
+  { src: imgBaseUrlRockAlbums + "lynyrdskynyrd-pronouncedlehnerdskinnerd.webp", matched: false },
+  { src: imgBaseUrlRockAlbums + "patbenatar-getnervous.webp", matched: false },
+  { src: imgBaseUrlRockAlbums + "queen-anightattheopera.webp", matched: false },
   { src: imgBaseUrlRockAlbums + "rush-moving-pictures.webp", matched: false },
+  { src: imgBaseUrlRockAlbums + "styx-piecesofeight.webp", matched: false },
   { src: imgBaseUrlRockAlbums + "thewho-whosnext.webp", matched: false },
   { src: imgBaseUrlRockAlbums + "van-halen-i.webp", matched: false },
 ];
@@ -76,16 +98,28 @@ const Concentration = () => {
   document.title = "DEF Concentration Game";
 
   const [cards, setCards] = useState([]);
+  const [cardsBack, setCardsBack] = useState([cardImageBackRockAlbums]);
   const [turns, setTurns] = useState(0);
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
   const [disabled, setDisabled] = useState(false);
   const [matches, setMatches] = useState(0);
-  const [theme, setTheme] = useState("baseball");
+  const [theme, setTheme] = useState("rockalbums");
+  let themedCardImages = cardImagesRockAlbums.concat(cardImagesRockAlbums);
 
   //shuffle cards
   const shuffleCards = () => {
-    let gameCards = shuffleArray([...cardImagesRockAlbums, ...cardImagesRockAlbums]);
+    if (theme === "rockalbums") {
+      setCardsBack(cardImageBackRockAlbums);
+      themedCardImages = cardImagesRockAlbums.concat(cardImagesRockAlbums);
+    } else if (theme === "baseball") {
+      setCardsBack(cardImageBackBaseball);
+      themedCardImages = cardImagesALEast.concat(cardImagesALEast);
+    } else if (theme === "hockey") {
+      setCardsBack(cardImageBackHockey);
+      themedCardImages = cardImagesHockey;
+    }
+    let gameCards = shuffleArray([...themedCardImages]);
     gameCards = gameCards.map((card) => ({ ...card, id: Math.random() }));
     setCards(gameCards);
     setTurns(0);
@@ -99,11 +133,15 @@ const Concentration = () => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
   };
 
+  const handleDropdownChange = (e) => {
+    setTheme(e.target.value);
+  }
+
   useEffect(() => {
     if (choiceOne && choiceTwo) {
       setDisabled(true);
       if (choiceOne.src === choiceTwo.src) {
-        setMatches((prevMatches) => prevMatches + 1);
+        setMatches(prevMatches => prevMatches + 1);
         setCards((prevCards) => {
           return prevCards.map((card) => {
             if (card.src === choiceOne.src) {
@@ -133,6 +171,7 @@ const Concentration = () => {
 
   useEffect(() => {
     setTheme(theme);
+    shuffleCards();
   }, [theme]);
 
   useEffect(() => {
@@ -149,15 +188,21 @@ const Concentration = () => {
   return (
     <div id="concentration-wrap">
       <h1>Concentration Game</h1>
-      {/* <select name="gameTheme" id="gameTheme">
-        <option value="baseball">Baseball</option>
-        <option value="hockey">Hockey</option>
-        <option value="rockalbums">Rock Albums</option>
-      </select> */}
-      <button onClick={shuffleCards}>New Game</button>
-      <h3>
-        <span>Turns: {turns}</span> ... <span>Matches: {matches}</span>
-      </h3>
+      <div className="select-row">
+        <button onClick={shuffleCards}>New Game</button>
+        <div className="custom-select-wrap">
+          <label htmlFor="gameTheme"><b>Game<br />Theme</b></label>
+          <select id="gameTheme" name="gameTheme" value={theme} onChange={handleDropdownChange}>
+            <option value="baseball">Baseball</option>
+            <option value="hockey">Hockey</option>
+            <option value="rockalbums">Rock Albums</option>
+          </select>
+        </div>
+        <div>
+          <span>Turns: {turns}</span><br />
+          <span>Matches: {matches}</span>
+        </div>
+      </div>
       <div className="card-grid">
         {cards.map((card) => (
           <ConcentrationCard
@@ -166,7 +211,8 @@ const Concentration = () => {
             handleChoice={handleChoice}
             flipped={card === choiceOne || card === choiceTwo || card.matched}
             disabled={disabled}
-            cardImgBack={cardImageBackRockAlbums}
+            cardBackImg={cardsBack}
+            theme={theme}
           />
         ))}
       </div>

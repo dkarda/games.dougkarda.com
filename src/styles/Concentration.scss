@@ -2,7 +2,7 @@
 
 #concentration-wrap {
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
     font-size: 1.5em;
     text-align: center;
     background: #0C2340;
@@ -14,22 +14,62 @@
         padding: 5px 0;
     }
     
-    & button {
-        background-color: #FFF;
-        border: 5px solid #fff;
-        border-color: hsl(200, 100%, 30%);
-        padding: 6px 12px;
-        border-radius: 25px;
-        color: hsl(200, 100%, 30%);
-        font-weight: 800;
-        cursor: pointer;
-        font-size: 1em;
-        text-transform: uppercase;        
-        &:hover {
-            background-color: hsl(200, 100%, 30%);
+    & .select-row {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        max-width: 750px;
+        margin: 0 auto;
+        gap: 25px;
+
+        & button {
+            background-color: #FFF;
+            border: 5px solid #fff;
             border-color: hsl(200, 100%, 30%);
-            color: #fff;
-        }        
+            padding: 6px 12px;
+            min-width: 200px;
+            border-radius: 25px;
+            color: hsl(200, 100%, 30%);
+            font-weight: 800;
+            cursor: pointer;
+            font-size: 1em;
+            text-transform: uppercase;        
+            &:hover {
+                background-color: hsl(200, 100%, 30%);
+                border-color: hsl(200, 100%, 30%);
+                color: #fff;
+            }
+        }
+
+        & .custom-select-wrap {
+            display: flex;
+            margin: 0 auto;
+            & label {
+                text-align: right;
+            }
+            & select {
+                font-size: 0.8em;
+                padding: 10px 15px;
+                margin-left: 5px;
+                border-radius: 15px;
+                background-color: #fff;
+                font-family: Arial, sans-serif;
+                color: #333;
+                cursor: pointer;
+                outline: none; /* Remove outline on focus */
+
+                /* Focus state for accessibility and visual feedback */
+                &:focus {
+                border-color: #007bff; /* Highlight border on focus */
+                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle shadow on focus */
+                }
+
+                /* Styling for options (can be more limited natively) */
+                & option {
+                padding: 8px 15px;
+                font-size: 16px;
+                }
+            }
+        }
     }
 
     & .card-grid {
@@ -68,6 +108,9 @@
         & img.concentration-card-back {
             transition: all ease-in 0.2s;
             transition-delay: 0.2s;
+            &.hockey {
+                background-color: #B94700;
+            }
         }
         
         & .flipped img.concentration-card-back {
