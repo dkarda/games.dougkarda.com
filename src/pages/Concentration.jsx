@@ -37,31 +37,30 @@ const Concentration = () => {
   const [disabled, setDisabled] = useState(false);
   const [matches, setMatches] = useState(0);
   const [theme, setTheme] = useState("halloween");
-  // let themedCardImages = cardImagesRockAlbums.concat(cardImagesRockAlbums);
   let themedCardImages = [];
-  
+
   //shuffle cards
   const shuffleCards = () => {
     switch (theme) {
-    case "rockalbums":
-      setCardsBack(cardImageBackRockAlbums);
-      themedCardImages = cardImagesRockAlbums.concat(cardImagesRockAlbums);
-      break;
-    case "baseball":
-      setCardsBack(cardImageBackBaseball);
-      themedCardImages = cardImagesALEast.concat(cardImagesALEast);
-      break;
-    case "hockey":
-      setCardsBack(cardImageBackHockey);
-      themedCardImages = cardImagesHockey.concat(cardImagesHockey);
-      break;
-    case "halloween":
-      setCardsBack(cardImageBackHalloween);
-      themedCardImages = cardImagesHalloween.concat(cardImagesHalloween);
-      break;
-    default:
+      case "rockalbums":
+        setCardsBack(cardImageBackRockAlbums);
+        themedCardImages = cardImagesRockAlbums.concat(cardImagesRockAlbums);
+        break;
+      case "baseball":
+        setCardsBack(cardImageBackBaseball);
+        themedCardImages = cardImagesALEast.concat(cardImagesALEast);
+        break;
+      case "hockey":
+        setCardsBack(cardImageBackHockey);
+        themedCardImages = cardImagesHockey.concat(cardImagesHockey);
+        break;
+      case "halloween":
+        setCardsBack(cardImageBackHalloween);
+        themedCardImages = cardImagesHalloween.concat(cardImagesHalloween);
+        break;
+      default:
       // Code to execute if no case matches
-  }
+    }
     let gameCards = shuffleArray([...themedCardImages]);
     gameCards = gameCards.map((card) => ({ ...card, id: Math.random() }));
     setCards(gameCards);
@@ -129,7 +128,7 @@ const Concentration = () => {
   };
 
   return (
-    <div id="concentration-wrap">
+    <div id="concentration-wrap" className={theme}>
       <h1>Concentration Game</h1>
       <div className="select-row">
         <button onClick={shuffleCards}>New Game</button>
@@ -147,10 +146,18 @@ const Concentration = () => {
             value={theme}
             onChange={handleDropdownChange}
           >
-            <option value="baseball">Baseball</option>
-            <option value="halloween">Halloween</option>
-            <option value="hockey">Hockey</option>
-            <option value="rockalbums">Rock Albums</option>
+            <option value="baseball">
+              Baseball AL East ({cardImagesALEast.length * 2} cards)
+            </option>
+            <option value="halloween">
+              Halloween ({cardImagesHalloween.length * 2} cards)
+            </option>
+            <option value="hockey">
+              Hockey ({cardImagesHockey.length * 2} cards)
+            </option>
+            <option value="rockalbums">
+              Rock Albums ({cardImagesRockAlbums.length * 2} cards)
+            </option>
           </select>
         </div>
         <div>

@@ -8,6 +8,42 @@
     background: #0C2340;
     color: #fff;
     padding: 0 20px;
+    &.baseball {
+        background-color: #0C2340;
+        & .select-row button {
+            border-color: #79bca4;
+            color: lightseagreen;
+        }
+    }
+    &.halloween {
+        background-color: #a55d06;
+        & .select-row button {
+            border-color: orange;
+            color: darkorange;
+        }
+    }
+    &.hockey {
+        background-color: #222;
+        & .select-row button {
+            border-color: darkorange;
+            color: darkorange;
+        }
+        & .card-grid {
+            grid-template-columns: repeat(6, 1fr);
+            max-width: 850px;
+        }
+    }
+    &.rockalbums {
+        background-color: darkred;
+        & .select-row button {
+            border-color: #111;
+            color: #e82e2e;
+        }
+        & .card-grid {
+            grid-template-columns: repeat(7, 1fr);
+            max-width: 1000px;
+        }
+    }
 
     & h1, h3 {
         margin: 0 auto;
@@ -19,7 +55,7 @@
         grid-template-columns: 1fr 3fr 2fr;
         max-width: 750px;
         margin: 0 auto;
-        gap: 25px;
+        gap: 20px;
 
         & button {
             background-color: #FFF;
@@ -55,18 +91,14 @@
                 font-family: Arial, sans-serif;
                 color: #333;
                 cursor: pointer;
-                outline: none; /* Remove outline on focus */
-
-                /* Focus state for accessibility and visual feedback */
+                outline: none;
                 &:focus {
-                border-color: #007bff; /* Highlight border on focus */
-                box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Subtle shadow on focus */
+                    border-color: #007bff;
+                    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
                 }
-
-                /* Styling for options (can be more limited natively) */
                 & option {
-                padding: 8px 15px;
-                font-size: 16px;
+                    padding: 8px 10px;
+                    font-size: .8em;
                 }
             }
         }
