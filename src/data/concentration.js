@@ -7,7 +7,7 @@ const imgBaseUrlRockAlbums =
 const imgBaseUrlHalloween =
   import.meta.env.VITE_IMG_BASE_URL + "halloween/";
 
-export const cardImageBackBaseball = imgBaseUrlBaseball + "baseball.png";
+export const cardImageBackBaseball = imgBaseUrlBaseball + "baseball.webp";
 export const cardImageBackHockey = imgBaseUrlHockey + "nhl-shield.svg";
 export const cardImageBackRockAlbums = imgBaseUrlRockAlbums + "album-plain.webp";
 export const cardImageBackHalloween = imgBaseUrlHalloween + "halloween-generic-pattern-orange.webp";

@@ -9,10 +9,10 @@
     color: #fff;
     padding: 0 20px;
     &.baseball {
-        background-color: #0C2340;
+        background-color: seagreen;
         & .select-row button {
-            border-color: #79bca4;
-            color: lightseagreen;
+            border-color: darkgreen;
+            color: darkgreen;
         }
     }
     &.halloween {
@@ -92,10 +92,6 @@
                 color: #333;
                 cursor: pointer;
                 outline: none;
-                &:focus {
-                    border-color: #007bff;
-                    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-                }
                 & option {
                     padding: 8px 10px;
                     font-size: .8em;
@@ -120,7 +116,7 @@
         max-width: 150px;
         max-height: 150px;
         position: relative;
-        border: 3px solid #AAA;
+        border: 2px solid #000;
         & img {
             max-width: 150px;
             aspect-ratio: 1;
