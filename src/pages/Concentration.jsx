@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import "../styles/Concentration.scss";
 import ConcentrationCard from "../components/ConcentrationCard";
 import {
+  cardImageBackBaseball,
+  cardImageBackHockey,
+  cardImageBackRockAlbums,
+  cardImageBackHalloween,
   cardImagesALEast,
   cardImagesALCentral,
   cardImagesALWest,
@@ -10,9 +14,7 @@ import {
   cardImagesNLWest,
   cardImagesHockey,
   cardImagesRockAlbums,
-  cardImageBackBaseball,
-  cardImageBackHockey,
-  cardImageBackRockAlbums,
+  cardImagesHalloween,
 } from "../data/concentration";
 
 //Fisher-Yates (or Knuth) shuffle algorithm
@@ -28,27 +30,38 @@ const Concentration = () => {
   document.title = "DEF Concentration Game";
 
   const [cards, setCards] = useState([]);
-  const [cardsBack, setCardsBack] = useState([cardImageBackRockAlbums]);
+  const [cardsBack, setCardsBack] = useState([]);
   const [turns, setTurns] = useState(0);
   const [choiceOne, setChoiceOne] = useState(null);
   const [choiceTwo, setChoiceTwo] = useState(null);
   const [disabled, setDisabled] = useState(false);
   const [matches, setMatches] = useState(0);
-  const [theme, setTheme] = useState("rockalbums");
-  let themedCardImages = cardImagesRockAlbums.concat(cardImagesRockAlbums);
-
+  const [theme, setTheme] = useState("halloween");
+  // let themedCardImages = cardImagesRockAlbums.concat(cardImagesRockAlbums);
+  let themedCardImages = [];
+  
   //shuffle cards
   const shuffleCards = () => {
-    if (theme === "rockalbums") {
+    switch (theme) {
+    case "rockalbums":
       setCardsBack(cardImageBackRockAlbums);
       themedCardImages = cardImagesRockAlbums.concat(cardImagesRockAlbums);
-    } else if (theme === "baseball") {
+      break;
+    case "baseball":
       setCardsBack(cardImageBackBaseball);
       themedCardImages = cardImagesALEast.concat(cardImagesALEast);
-    } else if (theme === "hockey") {
+      break;
+    case "hockey":
       setCardsBack(cardImageBackHockey);
       themedCardImages = cardImagesHockey.concat(cardImagesHockey);
-    }
+      break;
+    case "halloween":
+      setCardsBack(cardImageBackHalloween);
+      themedCardImages = cardImagesHalloween.concat(cardImagesHalloween);
+      break;
+    default:
+      // Code to execute if no case matches
+  }
     let gameCards = shuffleArray([...themedCardImages]);
     gameCards = gameCards.map((card) => ({ ...card, id: Math.random() }));
     setCards(gameCards);
@@ -135,6 +148,7 @@ const Concentration = () => {
             onChange={handleDropdownChange}
           >
             <option value="baseball">Baseball</option>
+            <option value="halloween">Halloween</option>
             <option value="hockey">Hockey</option>
             <option value="rockalbums">Rock Albums</option>
           </select>

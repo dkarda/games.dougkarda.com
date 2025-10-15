@@ -16,7 +16,7 @@
     
     & .select-row {
         display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-columns: 1fr 3fr 2fr;
         max-width: 750px;
         margin: 0 auto;
         gap: 25px;
@@ -47,8 +47,8 @@
                 text-align: right;
             }
             & select {
-                font-size: 0.8em;
-                padding: 10px 15px;
+                font-size: 0.9em;
+                padding: 10px;
                 margin-left: 5px;
                 border-radius: 15px;
                 background-color: #fff;
@@ -69,6 +69,9 @@
                 font-size: 16px;
                 }
             }
+        }
+        > div {
+            text-align: right;
         }
     }
 

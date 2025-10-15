@@ -4,10 +4,13 @@ const imgBaseUrlHockey =
   import.meta.env.VITE_IMG_BASE_URL + "sports/logos/hockey/";
 const imgBaseUrlRockAlbums =
   import.meta.env.VITE_IMG_BASE_URL + "music/albums/";
+const imgBaseUrlHalloween =
+  import.meta.env.VITE_IMG_BASE_URL + "halloween/";
 
 export const cardImageBackBaseball = imgBaseUrlBaseball + "baseball.png";
 export const cardImageBackHockey = imgBaseUrlHockey + "nhl-shield.svg";
 export const cardImageBackRockAlbums = imgBaseUrlRockAlbums + "album-plain.webp";
+export const cardImageBackHalloween = imgBaseUrlHalloween + "halloween-skulls-pattern.webp";
 
 export const cardImagesALEast = [
   { src: imgBaseUrlBaseball + "bluejays.svg", matched: false },
@@ -79,4 +82,16 @@ export const cardImagesRockAlbums = [
   { src: imgBaseUrlRockAlbums + "styx-piecesofeight.webp", matched: false },
   { src: imgBaseUrlRockAlbums + "thewho-whosnext.webp", matched: false },
   { src: imgBaseUrlRockAlbums + "van-halen-i.webp", matched: false },
+];
+export const cardImagesHalloween = [
+  { src: imgBaseUrlHalloween + "bat.webp", matched: false },
+  { src: imgBaseUrlHalloween + "blackcat.webp", matched: false },
+  { src: imgBaseUrlHalloween + "cauldron.webp", matched: false },
+  { src: imgBaseUrlHalloween + "ghost.webp", matched: false },
+  { src: imgBaseUrlHalloween + "pumpkin.webp", matched: false },
+  { src: imgBaseUrlHalloween + "skeleton.webp", matched: false },
+  { src: imgBaseUrlHalloween + "spider.webp", matched: false },
+  { src: imgBaseUrlHalloween + "spiderweb.webp", matched: false },
+  { src: imgBaseUrlHalloween + "tombstone.webp", matched: false },
+  { src: imgBaseUrlHalloween + "witch.webp", matched: false },
 ];
