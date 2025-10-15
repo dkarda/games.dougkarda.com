@@ -10,7 +10,7 @@ const imgBaseUrlHalloween =
 export const cardImageBackBaseball = imgBaseUrlBaseball + "baseball.png";
 export const cardImageBackHockey = imgBaseUrlHockey + "nhl-shield.svg";
 export const cardImageBackRockAlbums = imgBaseUrlRockAlbums + "album-plain.webp";
-export const cardImageBackHalloween = imgBaseUrlHalloween + "halloween-skulls-pattern.webp";
+export const cardImageBackHalloween = imgBaseUrlHalloween + "halloween-generic-pattern-orange.webp";
 
 export const cardImagesALEast = [
   { src: imgBaseUrlBaseball + "bluejays.svg", matched: false },
