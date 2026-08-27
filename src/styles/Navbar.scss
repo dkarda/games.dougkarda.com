@@ -1,110 +1,184 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-  }
-  
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  box-sizing: border-box;
+  min-height: 3.75rem;
+  padding: 0 1.75rem 0 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  color: #f2f4f7;
+  background: rgba(16, 17, 20, 0.92);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+}
+
+.site-title {
+  width: auto;
+  height: auto;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.7rem 0;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.site-title:hover,
+.site-title:active,
+.site-title:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-title:hover {
+  color: #d9eef8;
+}
+
+.site-title.active {
+  color: #d7f4ff;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0 0 0 auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 0.35rem;
+}
+
+nav li {
+  display: flex;
+  flex: 0 0 auto;
+  width: max-content;
+}
+
+nav li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 0.55rem;
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  white-space: nowrap;
+  width: max-content;
+}
+
+nav li a span {
+  flex-shrink: 0;
+}
+
+nav li a:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+nav li.active a {
+  background-color: rgba(56, 158, 196, 0.22);
+  box-shadow: inset 0 0 0 1px rgba(126, 206, 232, 0.35);
+}
+
+nav a:focus-visible {
+  outline: 2px solid #7ecce8;
+  outline-offset: 2px;
+}
+
+nav li a img {
+  flex-shrink: 0;
+  max-height: 28px;
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  display: block;
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+  width: 2.1rem;
+  height: 1.35rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+nav .menu span {
+  position: absolute;
+  left: 0;
+  height: 0.18rem;
+  width: 100%;
+  background-color: #f2f4f7;
+  border-radius: 99px;
+  transition: transform 0.2s ease, opacity 0.2s ease, top 0.2s ease;
+}
+
+nav .menu span:nth-child(1) { top: 0; }
+nav .menu span:nth-child(2) { top: 0.55rem; }
+nav .menu span:nth-child(3) { top: 1.1rem; }
+
+nav .menu.open span:nth-child(1) {
+  top: 0.55rem;
+  transform: rotate(45deg);
+}
+
+nav .menu.open span:nth-child(2) {
+  opacity: 0;
+}
+
+nav .menu.open span:nth-child(3) {
+  top: 0.55rem;
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 666px) {
   nav {
-    background-color: #000;
-    color: white;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: stretch;
-    gap: 2rem;
-    padding: 0 1rem;
-  }
-  
-  .site-title {
-    font-size: 2rem;
-  }
-  
-  nav ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    display: flex;
-    gap: .2rem;
-  }
-  
-  nav li.active {
-    background-color: #555;
-  }
-  
-  nav li:hover {
-    background-color: #777;
+    padding: 0.35rem 1rem 0.5rem;
   }
 
-  nav a {
-    color: inherit;
-    text-decoration: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: .25rem .5rem;
-  }
-  
-  nav li a img {
-    max-height: 40px;
+  .site-title {
+    padding: 0.65rem 0;
   }
 
   nav .menu {
+    display: block;
+  }
+
+  nav ul {
     display: none;
-    position: absolute;
-    top: 0.75rem;
-    right: 0.5rem;
     flex-direction: column;
-    justify-content: space-between;
-    width: 2.25rem;
-    height: 2rem;
-  }
-
-  nav .menu span {
-    height: 0.4rem;
     width: 100%;
-    background-color: #fff;
-    border-radius: 0.2rem;
+    gap: 0.25rem;
+    padding-bottom: 0.4rem;
   }
 
-
-  // @media (min-width: 667px) {
-  //   nav ul li span {
-  //     display: none;
-  //   }
-  // }
-
-  @media (max-width: 666px) {
-    nav {
-      flex-direction: column;
-      align-items: start;
-    }
-
-    nav .menu {
-      display: flex;
-    }
-
-    nav ul {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      margin-bottom: 0.25rem;
-    }
-
-    nav ul.open {
-      display: flex;
-    }
-
-    nav ul li {
-      width: 100%;
-      text-align: center;
-    }
-
-    nav ul li img {
-      display: none;
-    }
-
-    nav ul li a {
-      margin: 0.2rem 0.5rem;
-    }
+  nav ul.open {
+    display: flex;
   }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    margin: 0;
+    justify-content: center;
+    padding: 0.7rem 0.75rem;
+  }
+
+  nav ul li img {
+    display: none;
+  }
+}

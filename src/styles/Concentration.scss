@@ -1,44 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
 
 #concentration-wrap {
+    --accent: #6eb8e8;
+    --accent-strong: #3d8ec0;
     margin: 0;
-    min-height: 100vh;
+    width: 100%;
+    min-height: calc(100dvh - 3.75rem);
     font-size: 1.5em;
     text-align: center;
-    background: #0C2340;
-    color: #fff;
-    padding: 0 20px;
+    color: #f4f7fb;
+    padding: 1.25rem 20px 3rem;
+    background:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(90, 150, 200, 0.28), transparent 55%),
+        linear-gradient(165deg, #16324f 0%, #0c1c2e 48%, #08131f 100%);
+
     &.baseball {
-        background-color: #22653f;
-        & .select-row button {
-            border-color: darkgreen;
-            color: darkgreen;
-        }
+        --accent: #8fd4a8;
+        --accent-strong: #2f7a4e;
+        background:
+            radial-gradient(ellipse 70% 45% at 50% -8%, rgba(70, 150, 100, 0.32), transparent 58%),
+            linear-gradient(165deg, #1c3d2e 0%, #12261d 46%, #0b1812 100%);
     }
+
     &.halloween {
-        background-color: #8a591d;
-        & .select-row button {
-            border-color: orange;
-            color: darkorange;
-        }
+        --accent: #f0a35a;
+        --accent-strong: #c46a1e;
+        background:
+            radial-gradient(ellipse 60% 40% at 80% 0%, rgba(232, 120, 40, 0.22), transparent 50%),
+            radial-gradient(ellipse 50% 40% at 10% 100%, rgba(120, 60, 180, 0.2), transparent 55%),
+            linear-gradient(165deg, #2a1736 0%, #1a1024 48%, #100a16 100%);
     }
+
     &.hockey {
-        background-color: #333;
-        & .select-row button {
-            border-color: darkorange;
-            color: darkorange;
-        }
+        --accent: #7ed7ef;
+        --accent-strong: #2a8eab;
+        background:
+            radial-gradient(ellipse 75% 50% at 50% -12%, rgba(120, 200, 230, 0.26), transparent 55%),
+            linear-gradient(165deg, #1a3a4d 0%, #102838 48%, #0a1a24 100%);
+
         & .card-grid {
             grid-template-columns: repeat(6, 1fr);
             max-width: 850px;
         }
     }
+
     &.rockalbums {
-        background-color: #900909;
-        & .select-row button {
-            border-color: #111;
-            color: #e82e2e;
-        }
+        --accent: #f08a8a;
+        --accent-strong: #b03a3a;
+        background:
+            radial-gradient(ellipse 55% 40% at 50% -5%, rgba(220, 70, 70, 0.28), transparent 52%),
+            linear-gradient(165deg, #3a161c 0%, #1c0d12 48%, #10080b 100%);
+
         & .card-grid {
             grid-template-columns: repeat(7, 1fr);
             max-width: 1000px;
@@ -48,8 +60,9 @@
     & h1, h3 {
         margin: 0 auto;
         padding: 5px 0;
+        text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
     }
-    
+
     & .select-row {
         display: grid;
         grid-template-columns: 1fr 3fr 2fr;
@@ -59,20 +72,19 @@
         font-size: .8em;
 
         & button {
-            background-color: #FFF;
-            border: 5px solid #fff;
-            border-color: hsl(200, 100%, 30%);
+            background-color: rgba(255, 255, 255, 0.94);
+            border: 3px solid var(--accent-strong);
             padding: 6px 12px;
             min-width: 200px;
             border-radius: 25px;
-            color: hsl(200, 100%, 30%);
+            color: var(--accent-strong);
             font-weight: 800;
             cursor: pointer;
             font-size: 1em;
-            text-transform: uppercase;        
+            text-transform: uppercase;
             &:hover {
-                background-color: hsl(200, 100%, 30%);
-                border-color: hsl(200, 100%, 30%);
+                background-color: var(--accent-strong);
+                border-color: var(--accent-strong);
                 color: #fff;
             }
         }
@@ -112,7 +124,7 @@
         place-items: center;
         max-width: 750px;
     }
-    
+
     & .concentration-card {
         max-width: 150px;
         max-height: 150px;
@@ -130,12 +142,12 @@
             transition: all ease-in 0.2s;
             background-color: #DDD;
         }
-        
+
         & .flipped img.concentration-card-front {
             transform: rotateY(0deg);
             transition-delay: 0.2s;
         }
-        
+
         & img.concentration-card-back {
             transition: all ease-in 0.2s;
             transition-delay: 0.2s;
@@ -143,7 +155,7 @@
                 background-color: #B94700;
             }
         }
-        
+
         & .flipped img.concentration-card-back {
             transform: rotateY(90deg);
             transition-delay: 0;

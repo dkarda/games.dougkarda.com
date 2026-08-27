@@ -3,6 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Home from './pages/Home';
 import Concentration from './pages/Concentration';
+import Minesweeper from './pages/Minesweeper';
 import ErrorBoundary from "./components/ErrorBoundary";
 
 export const router = createBrowserRouter([
@@ -12,6 +13,7 @@ export const router = createBrowserRouter([
     children: [
       { index: true, element: <Home />, errorElement: <ErrorBoundary />},
       { path: "concentration", element: <Concentration />, errorElement: <ErrorBoundary />},
+      { path: "minesweeper", element: <Minesweeper />, errorElement: <ErrorBoundary />},
       { path: "*", element: <ErrorBoundary />, errorElement: <ErrorBoundary />},
     ],
   },
