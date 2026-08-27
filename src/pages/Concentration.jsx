@@ -36,7 +36,7 @@ const Concentration = () => {
   const [choiceTwo, setChoiceTwo] = useState(null);
   const [disabled, setDisabled] = useState(false);
   const [matches, setMatches] = useState(0);
-  const [theme, setTheme] = useState("hockey");
+  const [theme, setTheme] = useState("baseball");
   let themedCardImages = [];
 
   //shuffle cards
