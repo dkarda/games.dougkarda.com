@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800&display=swap');
 
 #concentration-wrap {
     --accent: #6eb8e8;
@@ -6,10 +6,11 @@
     margin: 0;
     width: 100%;
     min-height: calc(100dvh - 3.75rem);
-    font-size: 1.5em;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     text-align: center;
     color: #f4f7fb;
-    padding: 1.25rem 20px 3rem;
+    padding: 1.5rem 1.25rem 3rem;
     background:
         radial-gradient(ellipse 80% 50% at 50% -10%, rgba(90, 150, 200, 0.28), transparent 55%),
         linear-gradient(165deg, #16324f 0%, #0c1c2e 48%, #08131f 100%);
@@ -20,6 +21,12 @@
         background:
             radial-gradient(ellipse 70% 45% at 50% -8%, rgba(70, 150, 100, 0.32), transparent 58%),
             linear-gradient(165deg, #1c3d2e 0%, #12261d 46%, #0b1812 100%);
+
+        .concentration-card img.concentration-card-front {
+            object-fit: contain;
+            padding: 12%;
+            background-color: #f3f6f1;
+        }
     }
 
     &.halloween {
@@ -39,8 +46,24 @@
             linear-gradient(165deg, #1a3a4d 0%, #102838 48%, #0a1a24 100%);
 
         & .card-grid {
-            grid-template-columns: repeat(6, 1fr);
-            max-width: 850px;
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+            max-width: 880px;
+        }
+
+        .concentration-card img.concentration-card-front,
+        .concentration-card img.concentration-card-back {
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .concentration-card img.concentration-card-front {
+            padding: 10%;
+            background-color: #f4f7fa;
+        }
+
+        .concentration-card img.concentration-card-back {
+            padding: 14%;
+            background-color: #b94700;
         }
     }
 
@@ -52,113 +75,265 @@
             linear-gradient(165deg, #3a161c 0%, #1c0d12 48%, #10080b 100%);
 
         & .card-grid {
-            grid-template-columns: repeat(7, 1fr);
-            max-width: 1000px;
+            grid-template-columns: repeat(7, minmax(0, 1fr));
+            max-width: 1020px;
         }
     }
 
-    & h1, h3 {
-        margin: 0 auto;
-        padding: 5px 0;
+    .game-header {
+        margin: 0 auto 1.1rem;
+        max-width: 40rem;
+    }
+
+    .game-header h1 {
+        margin: 0;
+        font-size: clamp(1.7rem, 3.5vw, 2.3rem);
+        font-weight: 800;
+        letter-spacing: 0.02em;
         text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
     }
 
-    & .select-row {
-        display: grid;
-        grid-template-columns: 1fr 3fr 2fr;
-        max-width: 750px;
+    .game-header p {
+        margin: 0.35rem 0 0;
+        color: rgba(244, 247, 251, 0.78);
+        font-size: 1.02rem;
+    }
+
+    .toolbar {
+        --control-h: 3.15rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+        gap: 0.85rem 1rem;
+        max-width: 920px;
+        margin: 0 auto 1.35rem;
+        padding: 0.8rem 1rem;
+        background: rgba(8, 10, 14, 0.38);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 1rem;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22);
+        backdrop-filter: blur(12px);
+    }
+
+    .new-game {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: var(--control-h);
+        border: 0;
+        border-radius: 0.7rem;
+        padding: 0 1.2rem;
+        background: var(--accent-strong);
+        color: #fff;
+        font-family: inherit;
+        font-size: 0.92rem;
+        font-weight: 800;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.22);
+        box-sizing: border-box;
+    }
+
+    .new-game:hover {
+        filter: brightness(1.08);
+    }
+
+    .theme-picker {
+        display: flex;
+        align-items: center;
+        gap: 0.55rem;
+        height: var(--control-h);
+        color: rgba(244, 247, 251, 0.82);
+        font-size: 0.85rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+    }
+
+    .theme-picker select {
+        height: 100%;
+        min-width: 13rem;
+        padding: 0 0.75rem;
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        border-radius: 0.7rem;
+        background: rgba(255, 255, 255, 0.08);
+        color: #f4f7fb;
+        font-family: inherit;
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-transform: none;
+        letter-spacing: 0;
+        cursor: pointer;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .theme-picker select:focus-visible,
+    .new-game:focus-visible,
+    .concentration-card:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 2px;
+    }
+
+    .theme-picker option {
+        color: #222;
+        background: #fff;
+    }
+
+    .stats {
+        display: flex;
+        align-items: stretch;
+        gap: 0.55rem;
+        height: var(--control-h);
+    }
+
+    .stat {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 5.5rem;
+        height: 100%;
+        padding: 0 0.75rem;
+        border-radius: 0.7rem;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .stat span {
+        display: block;
+        color: rgba(244, 247, 251, 0.65);
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        line-height: 1.1;
+    }
+
+    .stat strong {
+        display: block;
+        margin-top: 0.05rem;
+        font-size: 1.05rem;
+        font-weight: 800;
+        line-height: 1.2;
+    }
+
+    .win-banner {
+        display: inline-block;
+        margin: 0 auto 1.1rem;
+        padding: 0.45rem 0.9rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.12);
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+        color: var(--accent);
+        font-weight: 700;
+    }
+
+    .card-grid {
         margin: 0 auto;
-        gap: 20px;
-        font-size: .8em;
-
-        & button {
-            background-color: rgba(255, 255, 255, 0.94);
-            border: 3px solid var(--accent-strong);
-            padding: 6px 12px;
-            min-width: 200px;
-            border-radius: 25px;
-            color: var(--accent-strong);
-            font-weight: 800;
-            cursor: pointer;
-            font-size: 1em;
-            text-transform: uppercase;
-            &:hover {
-                background-color: var(--accent-strong);
-                border-color: var(--accent-strong);
-                color: #fff;
-            }
-        }
-
-        & .custom-select-wrap {
-            display: flex;
-            margin: 0 auto;
-            & label {
-                text-align: right;
-            }
-            & select {
-                font-size: 0.9em;
-                padding: 10px;
-                margin-left: 5px;
-                border-radius: 15px;
-                background-color: #fff;
-                font-family: Arial, sans-serif;
-                color: #333;
-                cursor: pointer;
-                outline: none;
-                & option {
-                    padding: 8px 10px;
-                    font-size: .8em;
-                }
-            }
-        }
-        > div {
-            text-align: right;
-        }
-    }
-
-    & .card-grid {
-        margin: 10px auto 0;
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-gap: 10px;
-        place-items: center;
-        max-width: 750px;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 0.75rem;
+        max-width: 760px;
     }
 
-    & .concentration-card {
-        max-width: 150px;
-        max-height: 150px;
+    .concentration-card {
         position: relative;
-        & img {
-            max-width: 150px;
-            aspect-ratio: 1;
+        width: 100%;
+        aspect-ratio: 1;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        perspective: 700px;
+    }
+
+    .concentration-card:disabled {
+        cursor: default;
+        opacity: 1;
+    }
+
+    .concentration-card > span {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .concentration-card img {
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+        border-radius: 0.85rem;
+        box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+    }
+
+    .concentration-card:hover:not(:disabled) img.concentration-card-back {
+        transform: translateY(-3px);
+        box-shadow: 0 14px 26px rgba(0, 0, 0, 0.42);
+    }
+
+    .concentration-card.is-matched img.concentration-card-front {
+        box-shadow: 0 0 0 2px var(--accent), 0 10px 22px rgba(0, 0, 0, 0.35);
+    }
+
+    .concentration-card img.concentration-card-front {
+        position: absolute;
+        inset: 0;
+        transform: rotateY(90deg);
+        transition: transform 0.2s ease-in, box-shadow 0.2s ease;
+        background-color: #1a1c20;
+    }
+
+    .concentration-card .flipped img.concentration-card-front {
+        transform: rotateY(0deg);
+        transition-delay: 0.2s;
+    }
+
+    .concentration-card img.concentration-card-back {
+        transition: transform 0.2s ease-in, box-shadow 0.2s ease;
+        transition-delay: 0.2s;
+    }
+
+    .concentration-card .flipped img.concentration-card-back {
+        transform: rotateY(90deg);
+        transition-delay: 0;
+    }
+
+    @media (max-width: 720px) {
+        .toolbar {
+            flex-direction: column;
+        }
+
+        .theme-picker,
+        .theme-picker select {
             width: 100%;
-            display: block;
-            padding: 3px;
-        }
-        & img.concentration-card-front {
-            position: absolute;
-            transform: rotateY(90deg);
-            transition: all ease-in 0.2s;
-            background-color: #DDD;
         }
 
-        & .flipped img.concentration-card-front {
-            transform: rotateY(0deg);
-            transition-delay: 0.2s;
+        .stats {
+            width: 100%;
+            justify-content: center;
         }
 
-        & img.concentration-card-back {
-            transition: all ease-in 0.2s;
-            transition-delay: 0.2s;
-            &.hockey {
-                background-color: #B94700;
-            }
+        .card-grid,
+        &.hockey .card-grid,
+        &.rockalbums .card-grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            max-width: 100%;
         }
+    }
 
-        & .flipped img.concentration-card-back {
-            transform: rotateY(90deg);
-            transition-delay: 0;
+    @media (max-width: 420px) {
+        .card-grid,
+        &.hockey .card-grid,
+        &.rockalbums .card-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
         }
     }
 }

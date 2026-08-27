@@ -17,11 +17,10 @@ import {
   cardImagesHalloween,
 } from "../data/concentration";
 
-//Fisher-Yates (or Knuth) shuffle algorithm
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1)); // Random index from 0 to i
-    [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
 }
@@ -39,7 +38,9 @@ const Concentration = () => {
   const [theme, setTheme] = useState("baseball");
   let themedCardImages = [];
 
-  //shuffle cards
+  const pairCount = cards.length / 2;
+  const won = matches > 0 && matches === pairCount;
+
   const shuffleCards = () => {
     switch (theme) {
       case "rockalbums":
@@ -59,7 +60,7 @@ const Concentration = () => {
         themedCardImages = cardImagesHalloween.concat(cardImagesHalloween);
         break;
       default:
-      // Code to execute if no case matches
+        break;
     }
     let gameCards = shuffleArray([...themedCardImages]);
     gameCards = gameCards.map((card) => ({ ...card, id: Math.random() }));
@@ -70,7 +71,6 @@ const Concentration = () => {
     setChoiceTwo(null);
   };
 
-  //handle a choice
   const handleChoice = (card) => {
     choiceOne ? setChoiceTwo(card) : setChoiceOne(card);
   };
@@ -101,15 +101,14 @@ const Concentration = () => {
   }, [choiceOne, choiceTwo]);
 
   useEffect(() => {
-    if (matches > 0 && matches === cards.length / 2) {
-      console.log("GAME OVER");
-      confetti({
+    if (won && typeof window !== "undefined" && typeof window.confetti === "function") {
+      window.confetti({
         particleCount: 2000,
         spread: 70,
         origin: { y: 0.6 },
       });
     }
-  }, [matches]);
+  }, [won]);
 
   useEffect(() => {
     setTheme(theme);
@@ -129,17 +128,17 @@ const Concentration = () => {
 
   return (
     <div id="concentration-wrap" className={theme}>
-      <h1>Concentration Game</h1>
-      <div className="select-row">
-        <button onClick={shuffleCards}>New Game</button>
-        <div className="custom-select-wrap">
-          <label htmlFor="gameTheme">
-            <b>
-              Game
-              <br />
-              Theme
-            </b>
-          </label>
+      <header className="game-header">
+        <h1>Concentration</h1>
+        <p>Flip two cards and find every pair.</p>
+      </header>
+
+      <div className="toolbar">
+        <button type="button" className="new-game" onClick={shuffleCards}>
+          New game
+        </button>
+        <label className="theme-picker" htmlFor="gameTheme">
+          <span>Theme</span>
           <select
             id="gameTheme"
             name="gameTheme"
@@ -159,13 +158,28 @@ const Concentration = () => {
               Rock Albums ({cardImagesRockAlbums.length * 2} cards)
             </option>
           </select>
-        </div>
-        <div>
-          <span>Turns: {turns}</span>
-          <br />
-          <span>Matches: {matches}</span>
+        </label>
+        <div className="stats">
+          <div className="stat">
+            <span>Turns</span>
+            <strong>{turns}</strong>
+          </div>
+          <div className="stat">
+            <span>Matches</span>
+            <strong>
+              {matches}
+              {pairCount ? ` / ${pairCount}` : ""}
+            </strong>
+          </div>
         </div>
       </div>
+
+      {won ? (
+        <p className="win-banner" role="status">
+          You found them all in {turns} turns.
+        </p>
+      ) : null}
+
       <div className="card-grid">
         {cards.map((card) => (
           <ConcentrationCard
