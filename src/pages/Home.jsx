@@ -23,7 +23,7 @@ const Home = () => {
               <img src={game.icon} alt="" />
               <h2>{game.name}</h2>
               <p>{game.description}</p>
-              <span className="game-card-play">Play</span>
+              <span className="game-card-play">{game.cta || "Play"}</span>
             </Link>
           </li>
         ))}
