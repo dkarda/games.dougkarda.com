@@ -24,6 +24,45 @@
   line-height: 1.55;
 }
 
+.videogames-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin: 0 auto 1.75rem;
+  max-width: 38rem;
+}
+
+.videogames-search {
+  flex: 1 1 16rem;
+}
+
+.videogames-search input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0.7rem;
+  background: #181a1e;
+  color: #f2f4f7;
+  font-size: 1rem;
+}
+
+.videogames-search input::placeholder {
+  color: #8e97a3;
+}
+
+.videogames-search input:focus {
+  outline: 2px solid #2f8eab;
+  outline-offset: 2px;
+}
+
+.videogames-count {
+  margin: 0;
+  color: #b7c0ca;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
 .videogames-status {
   text-align: center;
   color: #c5ccd4;

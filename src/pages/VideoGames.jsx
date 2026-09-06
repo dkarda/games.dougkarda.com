@@ -1,3 +1,4 @@
+import { useMemo, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import {
   loadVideoGameLibrary,
@@ -5,15 +6,53 @@ import {
 } from "../data/videogames";
 import "../styles/VideoGames.scss";
 
+function gameSearchText(game) {
+  return [
+    game.name,
+    game.releasedYear,
+    statusLabel(game.status),
+    game.notes,
+    game.format,
+    ...(game.genres || []),
+    ...(game.platforms || []),
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
 const VideoGames = () => {
   document.title = "DEF Video Games";
+  const [query, setQuery] = useState("");
 
   const { data, isPending, isError, error, refetch, isFetching } = useQuery({
-    queryKey: ["videogames-library-v2"],
+    queryKey: ["videogames-library-v4"],
     queryFn: loadVideoGameLibrary,
     staleTime: 1000 * 60 * 30,
     retry: 1,
   });
+
+  const sortedGames = useMemo(() => {
+    const games = data?.games || [];
+    return [...games].sort((a, b) => {
+      const nameA = String(a.name ?? "").trim();
+      const nameB = String(b.name ?? "").trim();
+      if (!nameA && !nameB) return 0;
+      if (!nameA) return 1;
+      if (!nameB) return -1;
+      return nameA.localeCompare(nameB, undefined, {
+        sensitivity: "base",
+      });
+    });
+  }, [data?.games]);
+
+  const filteredGames = useMemo(() => {
+    const needle = query.trim().toLowerCase();
+    if (!needle) return sortedGames;
+    return sortedGames.filter((game) => gameSearchText(game).includes(needle));
+  }, [sortedGames, query]);
+
+  const hasLibrary = Boolean(data?.games?.length);
 
   return (
     <div id="videogames-wrap">
@@ -25,6 +64,27 @@ const VideoGames = () => {
           profile.
         </p>
       </header>
+
+      {hasLibrary ? (
+        <div className="videogames-toolbar">
+          <label className="videogames-search">
+            <input
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="Search titles, genres, platforms…"
+              aria-label="Search games"
+              autoComplete="off"
+              spellCheck="false"
+            />
+          </label>
+          <p className="videogames-count" aria-live="polite">
+            {query.trim()
+              ? `${filteredGames.length} of ${sortedGames.length}`
+              : `${sortedGames.length} games`}
+          </p>
+        </div>
+      ) : null}
 
       {isPending ? (
         <p className="videogames-status" role="status">
@@ -45,24 +105,17 @@ const VideoGames = () => {
         <p className="videogames-status">{data.notice}</p>
       ) : null}
 
-      {!isPending && !isError && (!data?.games || data.games.length === 0) ? (
+      {!isPending && !isError && !hasLibrary ? (
         <p className="videogames-status">No games in the list yet.</p>
       ) : null}
 
-      {data?.games?.length ? (
+      {hasLibrary && query.trim() && filteredGames.length === 0 ? (
+        <p className="videogames-status">No games match that search.</p>
+      ) : null}
+
+      {filteredGames.length ? (
         <ul className="videogames-grid">
-          {[...data.games]
-            .sort((a, b) => {
-              const nameA = String(a.name ?? "").trim();
-              const nameB = String(b.name ?? "").trim();
-              if (!nameA && !nameB) return 0;
-              if (!nameA) return 1;
-              if (!nameB) return -1;
-              return nameA.localeCompare(nameB, undefined, {
-                sensitivity: "base",
-              });
-            })
-            .map((game) => (
+          {filteredGames.map((game) => (
             <li key={game.key} className="videogame-card">
               <div className="videogame-cover">
                 {game.backgroundImage ? (

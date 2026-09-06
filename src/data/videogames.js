@@ -12,7 +12,7 @@ export const RAWG_USERNAME = String(
   import.meta.env.VITE_RAWG_USERNAME || ""
 ).trim();
 
-const CACHE_KEY = `videogames-library-v2:${RAWG_USERNAME || "cdn-only"}`;
+const CACHE_KEY = `videogames-library-v4:${RAWG_USERNAME || "cdn-only"}`;
 
 const STATUS_ALIASES = {
   beaten: "beaten",
@@ -81,7 +81,7 @@ function notesFromItem(item) {
 
 export function normalizeListItem(item, index) {
   const title = String(item.Title ?? item.title ?? "").trim();
-  const slug = item.slug ?? item.Slug ?? "";
+  const slug = item.slug ?? item.Slug ?? item.rawgSlug ?? item.rawg_slug ?? "";
   const rawgId = item.rawgId ?? item.rawg_id ?? null;
   return {
     listIndex: index,
@@ -91,7 +91,7 @@ export function normalizeListItem(item, index) {
     status: normalizeStatus(item),
     notes: notesFromItem(item),
     format: item.format ? String(item.format) : "",
-    score: typeof item.score === "number" ? item.score : null,
+    score: parsePersonalScore(item.score),
     own: item.own === "y" || item.own === true,
     poster: item.Poster && item.Poster !== "N/A" ? item.Poster : "",
     yearHint: item.Year ? String(item.Year).slice(0, 4) : "",
@@ -104,21 +104,56 @@ export function isUsableListItem(item) {
   return Boolean(item.slug || item.rawgId || item.title);
 }
 
+function parsePersonalScore(value) {
+  if (typeof value === "number" && Number.isFinite(value)) return value;
+  if (typeof value === "string" && value.trim()) {
+    const parsed = Number(value);
+    return Number.isFinite(parsed) ? parsed : null;
+  }
+  return null;
+}
+
 function yearFromDate(released) {
   if (!released) return "";
   return String(released).slice(0, 4);
 }
 
+function normalizeTitle(value) {
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+function canonicalTitle(value) {
+  return normalizeTitle(String(value || "").replace(/\(\s*\d{4}\s*\)/g, " "));
+}
+
 function pickSearchResult(results, title, yearHint) {
   if (!results?.length) return null;
-  const needle = title.toLowerCase();
+  const needle = canonicalTitle(title);
   const scored = results.map((game) => {
-    const name = (game.name || "").toLowerCase();
+    const name = canonicalTitle(game.name);
     let score = 0;
-    if (name === needle) score += 8;
-    else if (name.includes(needle) || needle.includes(name)) score += 4;
+    if (name === needle) score += 10;
+    else if (name.startsWith(`${needle} `) || needle.startsWith(`${name} `)) score += 4;
+    else if (name.includes(needle) || needle.includes(name)) score += 2;
+
+    const extraTokens = name
+      .split(" ")
+      .filter((token) => token && !needle.split(" ").includes(token));
+    score -= Math.min(8, extraTokens.length * 2);
+
     const year = yearFromDate(game.released);
-    if (yearHint && year === yearHint) score += 5;
+    if (yearHint && year === yearHint) score += 8;
+
+    const ratings = Number(game.ratings_count) || 0;
+    score += Math.min(8, Math.log10(ratings + 1) * 2.2);
+    if (game.background_image) score += 1;
+    if (typeof game.metacritic === "number") score += 1;
     return { game, score };
   });
   scored.sort((a, b) => b.score - a.score);
@@ -206,6 +241,8 @@ function rememberItem(maps, item, index) {
   if (item.slug) maps.bySlug.set(item.slug.toLowerCase(), index);
   const ty = titleYearKey(item.title, item.yearHint);
   if (ty) maps.byTitleYear.set(ty, index);
+  const name = canonicalTitle(item.title);
+  if (name && !maps.byTitle.has(name)) maps.byTitle.set(name, index);
 }
 
 function findMergedIndex(maps, item) {
@@ -218,6 +255,10 @@ function findMergedIndex(maps, item) {
   const ty = titleYearKey(item.title, item.yearHint);
   if (ty && maps.byTitleYear.has(ty)) {
     return maps.byTitleYear.get(ty);
+  }
+  const name = canonicalTitle(item.title);
+  if (name && maps.byTitle.has(name)) {
+    return maps.byTitle.get(name);
   }
   return -1;
 }
@@ -246,6 +287,7 @@ export function mergeLibraryItems(cdnItems, accountItems) {
     byId: new Map(),
     bySlug: new Map(),
     byTitleYear: new Map(),
+    byTitle: new Map(),
   };
 
   for (const item of cdnItems) {
@@ -406,11 +448,18 @@ export async function loadVideoGameLibrary() {
       if (!rawg) {
         if (item.rawgId || item.slug) {
           rawg = await fetchRawgDetails(item.rawgId || item.slug, RAWG_API_KEY);
-        } else {
+        } else if (item.title) {
           const results = await searchRawg(item.title, RAWG_API_KEY);
           const match = pickSearchResult(results, item.title, item.yearHint);
           if (match?.slug || match?.id) {
-            rawg = await fetchRawgDetails(match.slug || match.id, RAWG_API_KEY);
+            try {
+              rawg = await fetchRawgDetails(
+                match.slug || match.id,
+                RAWG_API_KEY
+              );
+            } catch {
+              rawg = match;
+            }
           }
         }
       }
