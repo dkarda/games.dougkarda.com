@@ -26,7 +26,7 @@ const VideoGames = () => {
   const [query, setQuery] = useState("");
 
   const { data, isPending, isError, error, refetch, isFetching } = useQuery({
-    queryKey: ["videogames-library-v4"],
+    queryKey: ["videogames-library-v5"],
     queryFn: loadVideoGameLibrary,
     staleTime: 1000 * 60 * 30,
     retry: 1,
@@ -60,8 +60,7 @@ const VideoGames = () => {
         <h1>Video game library</h1>
         <p>
           Games I own or play, with covers and details from RAWG. Status and
-          notes come from a list I host on the CDN, merged with my RAWG
-          profile.
+          notes come from a list in this repo, merged with my RAWG profile.
         </p>
       </header>
 

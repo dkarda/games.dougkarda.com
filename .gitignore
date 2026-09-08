@@ -1,6 +1,5 @@
 .well-known*
 cgi-bin*
-public*
 .env
 package-lock.json
 package.json

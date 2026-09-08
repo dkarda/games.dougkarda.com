@@ -1,4 +1,4 @@
-const DEFAULT_JSON_URL = "https://assets.dougkarda.com/data/videogames.json";
+const DEFAULT_JSON_URL = "/data/videogames.json";
 const RAWG_BASE = "https://api.rawg.io/api";
 const CACHE_TTL_MS = 1000 * 60 * 60 * 6;
 const RAWG_PAGE_SIZE = 40;
@@ -12,7 +12,7 @@ export const RAWG_USERNAME = String(
   import.meta.env.VITE_RAWG_USERNAME || ""
 ).trim();
 
-const CACHE_KEY = `videogames-library-v4:${RAWG_USERNAME || "cdn-only"}`;
+const CACHE_KEY = `videogames-library-v5:${RAWG_USERNAME || "local"}`;
 
 const STATUS_ALIASES = {
   beaten: "beaten",
@@ -435,7 +435,7 @@ export async function loadVideoGameLibrary() {
       accountOk = true;
     } catch {
       notice =
-        "Could not load RAWG account games. Showing the CDN list.";
+        "Could not load RAWG account games. Showing the local list.";
       accountOk = false;
     }
   }
