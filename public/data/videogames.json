@@ -90,14 +90,6 @@
     "score": 0
   },
   {
-    "Title": "ANYWHEREVR",
-    "own": "y",
-    "format": "PS digital",
-    "mainStory": "unplayed",
-    "fullGame": "",
-    "score": 0
-  },
-  {
     "Title": "ARCADE GAME SERIES: PAC-MAN",
     "own": "y",
     "format": "PS digital",
@@ -196,17 +188,10 @@
     "Title": "Batman: Arkham Knight",
     "slug": "batman-arkham-knight",
     "own": "y",
+    "format": "PS4 digital",
     "mainStory": "played",
     "fullGame": "pass",
     "score": 10
-  },
-  {
-    "Title": "Batman: Arkham Knight",
-    "own": "y",
-    "format": "PS4 digital",
-    "mainStory": "unplayed",
-    "fullGame": "",
-    "score": 0
   },
   {
     "Title": "Batman: Arkham Origins",
@@ -363,6 +348,7 @@
   },
   {
     "Title": "Call Of Duty: Infinite Warfare Jackal Assault VR Experience",
+    "slug": "call-of-duty-infinite-warfare-jackal-assault-vr-ex",
     "own": "y",
     "format": "PS4 digital",
     "mainStory": "unplayed",
@@ -704,14 +690,6 @@
     "score": 0
   },
   {
-    "Title": "EA SPORTS FC 26",
-    "own": "y",
-    "format": "PS digital",
-    "mainStory": "unplayed",
-    "fullGame": "",
-    "score": 0
-  },
-  {
     "Title": "EA SPORTS NHL 18",
     "own": "y",
     "format": "PS4 digital",
@@ -732,14 +710,6 @@
     "Title": "EA SPORTS PGA TOUR",
     "own": "y",
     "format": "PS digital",
-    "mainStory": "unplayed",
-    "fullGame": "",
-    "score": 0
-  },
-  {
-    "Title": "EA SPORTS Rory McIlroy PGA TOUR",
-    "own": "y",
-    "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
     "score": 0
@@ -954,7 +924,7 @@
     "score": 0
   },
   {
-    "Title": "Grand Theft Auto III – The Definitive Edition",
+    "Title": "Grand Theft Auto III - The Definitive Edition",
     "own": "y",
     "format": "PS digital",
     "mainStory": "unplayed",
@@ -962,17 +932,10 @@
     "score": 0
   },
   {
-    "Title": "Grand Theft Auto V & Grand Theft Auto: San Andreas",
+    "Title": "Grand Theft Auto V",
+    "slug": "grand-theft-auto-v",
     "own": "y",
-    "format": "PS4 digital",
-    "mainStory": "unplayed",
-    "fullGame": "",
-    "score": 0
-  },
-  {
-    "Title": "Grand Theft Auto V (PS5)",
-    "own": "y",
-    "format": "PS digital",
+    "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
     "score": 0
@@ -1043,11 +1006,12 @@
   },
   {
     "Title": "Hogwarts Legacy",
+    "slug": "hogwarts-legacy",
     "own": "y",
     "format": "PS5 digital",
-    "mainStory": "unplayed",
+    "mainStory": "played",
     "fullGame": "",
-    "score": 0
+    "score": 9
   },
   {
     "Title": "Hollow Knight",
@@ -1055,14 +1019,6 @@
     "own": "y",
     "format": "PS4 PS+ digital",
     "mainStory": "playing",
-    "fullGame": "",
-    "score": 0
-  },
-  {
-    "Title": "Hollow Knight Voidheart Edition",
-    "own": "y",
-    "format": "PS digital",
-    "mainStory": "unplayed",
     "fullGame": "",
     "score": 0
   },
@@ -1855,7 +1811,7 @@
     "slug": "ea-sports-rory-mcilroy-pga-tour",
     "own": "y",
     "format": "PS4 digital",
-    "mainStory": "playing",
+    "mainStory": "played",
     "fullGame": "",
     "score": 7
   },
