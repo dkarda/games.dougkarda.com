@@ -631,69 +631,114 @@ function mergeGame(personal, rawg) {
     score: personal.score,
     own: personal.own,
     rawgError: !rawg && !personal.skipRawg,
+    skipRawg: Boolean(personal.skipRawg),
+    needsMeta: gameNeedsRawgFetch(personal, rawg),
   };
 }
 
-function missingUsernameNotice() {
-  if (RAWG_USERNAME) return "";
-  return "RAWG account games were skipped. Set VITE_RAWG_USERNAME to merge your profile list.";
+function gameNeedsRawgFetch(personal, rawg) {
+  if (personal.skipRawg) return false;
+  const image = rawg?.background_image || personal.poster;
+  const description = rawg?.description_raw || rawg?.description || personal.plot;
+  return !image || !description;
 }
 
-export async function loadVideoGameLibrary() {
-  if (!RAWG_API_KEY) {
-    throw new Error("Missing VITE_RAWG_API_KEY. Add it to your local .env file.");
-  }
+export function libraryItemKey(item) {
+  return item.rawgId || item.slug || `${item.listIndex}-${item.title}`;
+}
 
+function snapshotGames(personal, cache) {
+  return personal.map((item) => {
+    if (item.skipRawg) return mergeGame(item, null);
+    const cached = lookupCachedRawg(cache, item) || item.rawgPreview || null;
+    return mergeGame(item, cached);
+  });
+}
+
+let metaCacheSingleton = null;
+
+function getMetaCache() {
+  if (!metaCacheSingleton) metaCacheSingleton = readMetaCache();
+  return metaCacheSingleton;
+}
+
+let metaWriteTimer = 0;
+
+function scheduleMetaWrite() {
+  window.clearTimeout(metaWriteTimer);
+  metaWriteTimer = window.setTimeout(() => {
+    writeMetaCache(getMetaCache());
+  }, 500);
+}
+
+async function loadPersonalItems(options = {}) {
+  const waitForAccount = Boolean(options.waitForAccount);
   const list = await fetchJson(VIDEOGAMES_JSON_URL, { cache: "no-store" });
   if (!Array.isArray(list)) {
     throw new Error("Video game list JSON must be an array.");
   }
 
   const cdnItems = list.map(normalizeListItem).filter(isUsableListItem);
-
   let notice = missingUsernameNotice();
   let accountItems = [];
-  let accountOk = !RAWG_USERNAME;
 
   if (RAWG_USERNAME) {
     const cachedAccount = readAccountCache();
     if (cachedAccount) {
       accountItems = cachedAccount;
-      accountOk = true;
-    } else {
+    } else if (waitForAccount) {
       try {
         const accountGames = await fetchAllUserGames(RAWG_USERNAME, RAWG_API_KEY);
         accountItems = accountGames
           .map(normalizeUserGame)
           .filter(isUsableListItem);
         writeAccountCache(accountItems);
-        accountOk = true;
       } catch {
         notice =
           "Could not load RAWG account games. Showing the local list.";
-        accountOk = false;
       }
     }
   }
 
-  const personal = mergeLibraryItems(cdnItems, accountItems);
-  const metaCache = readMetaCache();
+  return {
+    personal: mergeLibraryItems(cdnItems, accountItems),
+    notice,
+  };
+}
 
-  const games = await mapPool(personal, 4, async (item) => {
-    try {
-      if (item.skipRawg) {
-        return mergeGame(item, null);
-      }
-      const rawg = await resolveRawg(item, metaCache);
-      return mergeGame(item, rawg);
-    } catch {
-      return mergeGame(
-        item,
-        lookupCachedRawg(metaCache, item) || item.rawgPreview || null
-      );
-    }
-  });
+export async function loadLibraryShell() {
+  if (!RAWG_API_KEY) {
+    throw new Error("Missing VITE_RAWG_API_KEY. Add it to your local .env file.");
+  }
+  const { personal, notice } = await loadPersonalItems({ waitForAccount: false });
+  const games = snapshotGames(personal, getMetaCache());
+  return { personal, games, notice };
+}
 
-  writeMetaCache(metaCache);
-  return { games, notice };
+export async function enrichLibraryItem(item) {
+  const cache = getMetaCache();
+  try {
+    if (item.skipRawg) return mergeGame(item, null);
+    const rawg = await resolveRawg(item, cache);
+    scheduleMetaWrite();
+    return mergeGame(item, rawg);
+  } catch {
+    scheduleMetaWrite();
+    return mergeGame(
+      item,
+      lookupCachedRawg(cache, item) || item.rawgPreview || null
+    );
+  }
+}
+
+export async function loadVideoGameLibrary() {
+  const shell = await loadLibraryShell();
+  const games = await mapPool(shell.personal, 4, (item) => enrichLibraryItem(item));
+  writeMetaCache(getMetaCache());
+  return { games, notice: shell.notice };
+}
+
+function missingUsernameNotice() {
+  if (RAWG_USERNAME) return "";
+  return "RAWG account games were skipped. Set VITE_RAWG_USERNAME to merge your profile list.";
 }

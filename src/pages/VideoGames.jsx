@@ -1,9 +1,6 @@
-import { useMemo, useState } from "react";
-import { useQuery } from "@tanstack/react-query";
-import {
-  loadVideoGameLibrary,
-  statusLabel,
-} from "../data/videogames";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { statusLabel } from "../data/videogames";
+import { useVideoGameLibrary } from "../hooks/useVideoGameLibrary";
 import "../styles/VideoGames.scss";
 
 function gameSearchText(game) {
@@ -21,19 +18,99 @@ function gameSearchText(game) {
     .toLowerCase();
 }
 
+function VideoGameCard({ game, onVisible }) {
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (!game.needsMeta || !onVisible) return undefined;
+    const node = ref.current;
+    if (!node) return undefined;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          onVisible(game.key);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "240px 0px" }
+    );
+    observer.observe(node);
+    return () => observer.disconnect();
+  }, [game.key, game.needsMeta, onVisible]);
+
+  return (
+    <li ref={ref} className="videogame-card">
+      <div className="videogame-cover">
+        {game.backgroundImage ? (
+          <img
+            src={game.backgroundImage}
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
+        ) : (
+          <div className="videogame-cover-fallback" aria-hidden="true" />
+        )}
+        {game.status ? (
+          <span className={`videogame-badge status-${game.status}`}>
+            {statusLabel(game.status)}
+          </span>
+        ) : null}
+      </div>
+      <div className="videogame-body">
+        <h2>{game.name}</h2>
+        <p className="videogame-meta">
+          {[game.releasedYear, game.genres.slice(0, 3).join(", ")]
+            .filter(Boolean)
+            .join(" · ")}
+        </p>
+        {game.platforms.length ? (
+          <p className="videogame-platforms">{game.platforms.join(" · ")}</p>
+        ) : null}
+        <div className="videogame-scores">
+          {game.metacritic != null ? (
+            <span className="videogame-metacritic">
+              Metacritic {game.metacritic}
+            </span>
+          ) : null}
+          {game.score ? (
+            <span className="videogame-myscore">My score {game.score}</span>
+          ) : null}
+        </div>
+        {game.description ? (
+          <p className="videogame-desc">{game.description}</p>
+        ) : game.rawgError && !game.needsMeta ? (
+          <p className="videogame-desc muted">
+            RAWG metadata unavailable for this title.
+          </p>
+        ) : null}
+        {game.format ? (
+          <p className="videogame-format">{game.format}</p>
+        ) : null}
+        {game.notes ? (
+          <p className="videogame-notes">{game.notes}</p>
+        ) : null}
+      </div>
+    </li>
+  );
+}
+
 const VideoGames = () => {
   document.title = "DEF Video Games";
   const [query, setQuery] = useState("");
-
-  const { data, isPending, isError, error, refetch, isFetching } = useQuery({
-    queryKey: ["videogames-library-v8"],
-    queryFn: loadVideoGameLibrary,
-    staleTime: 1000 * 60 * 60 * 6,
-    retry: 1,
-  });
+  const {
+    games,
+    notice,
+    isPending,
+    isError,
+    error,
+    isEnriching,
+    refetch,
+    requestEnrich,
+  } = useVideoGameLibrary();
 
   const sortedGames = useMemo(() => {
-    const games = data?.games || [];
     return [...games].sort((a, b) => {
       const nameA = String(a.name ?? "").trim();
       const nameB = String(b.name ?? "").trim();
@@ -44,7 +121,7 @@ const VideoGames = () => {
         sensitivity: "base",
       });
     });
-  }, [data?.games]);
+  }, [games]);
 
   const filteredGames = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -52,7 +129,7 @@ const VideoGames = () => {
     return sortedGames.filter((game) => gameSearchText(game).includes(needle));
   }, [sortedGames, query]);
 
-  const hasLibrary = Boolean(data?.games?.length);
+  const hasLibrary = Boolean(games.length);
 
   return (
     <div id="videogames-wrap">
@@ -81,6 +158,7 @@ const VideoGames = () => {
             {query.trim()
               ? `${filteredGames.length} of ${sortedGames.length}`
               : `${sortedGames.length} games`}
+            {isEnriching ? " · loading details…" : ""}
           </p>
         </div>
       ) : null}
@@ -100,8 +178,8 @@ const VideoGames = () => {
         </div>
       ) : null}
 
-      {!isPending && !isError && data?.notice ? (
-        <p className="videogames-status">{data.notice}</p>
+      {!isPending && !isError && notice ? (
+        <p className="videogames-status">{notice}</p>
       ) : null}
 
       {!isPending && !isError && !hasLibrary ? (
@@ -115,65 +193,13 @@ const VideoGames = () => {
       {filteredGames.length ? (
         <ul className="videogames-grid">
           {filteredGames.map((game) => (
-            <li key={game.key} className="videogame-card">
-              <div className="videogame-cover">
-                {game.backgroundImage ? (
-                  <img src={game.backgroundImage} alt="" />
-                ) : (
-                  <div className="videogame-cover-fallback" aria-hidden="true" />
-                )}
-                {game.status ? (
-                  <span className={`videogame-badge status-${game.status}`}>
-                    {statusLabel(game.status)}
-                  </span>
-                ) : null}
-              </div>
-              <div className="videogame-body">
-                <h2>{game.name}</h2>
-                <p className="videogame-meta">
-                  {[
-                    game.releasedYear,
-                    game.genres.slice(0, 3).join(", "),
-                  ]
-                    .filter(Boolean)
-                    .join(" · ")}
-                </p>
-                {game.platforms.length ? (
-                  <p className="videogame-platforms">
-                    {game.platforms.join(" · ")}
-                  </p>
-                ) : null}
-                <div className="videogame-scores">
-                  {game.metacritic != null ? (
-                    <span className="videogame-metacritic">
-                      Metacritic {game.metacritic}
-                    </span>
-                  ) : null}
-                  {game.score ? (
-                    <span className="videogame-myscore">My score {game.score}</span>
-                  ) : null}
-                </div>
-                {game.description ? (
-                  <p className="videogame-desc">{game.description}</p>
-                ) : game.rawgError ? (
-                  <p className="videogame-desc muted">
-                    RAWG metadata unavailable for this title.
-                  </p>
-                ) : null}
-                {game.format ? (
-                  <p className="videogame-format">{game.format}</p>
-                ) : null}
-                {game.notes ? (
-                  <p className="videogame-notes">{game.notes}</p>
-                ) : null}
-              </div>
-            </li>
+            <VideoGameCard
+              key={game.key}
+              game={game}
+              onVisible={requestEnrich}
+            />
           ))}
         </ul>
-      ) : null}
-
-      {isFetching && !isPending ? (
-        <p className="videogames-status">Refreshing…</p>
       ) : null}
     </div>
   );
