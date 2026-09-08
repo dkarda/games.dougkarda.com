@@ -1,6 +1,8 @@
 const DEFAULT_JSON_URL = "/data/videogames.json";
 const RAWG_BASE = "https://api.rawg.io/api";
-const CACHE_TTL_MS = 1000 * 60 * 60 * 6;
+const META_CACHE_KEY = "videogames-rawg-meta-v1";
+const META_TTL_MS = 1000 * 60 * 60 * 24 * 30;
+const ACCOUNT_TTL_MS = 1000 * 60 * 60 * 24 * 7;
 const RAWG_PAGE_SIZE = 40;
 const RAWG_MAX_PAGES = 80;
 
@@ -12,7 +14,7 @@ export const RAWG_USERNAME = String(
   import.meta.env.VITE_RAWG_USERNAME || ""
 ).trim();
 
-const CACHE_KEY = `videogames-library-v5:${RAWG_USERNAME || "local"}`;
+const ACCOUNT_CACHE_KEY = `videogames-rawg-account-v1:${RAWG_USERNAME || "none"}`;
 
 const STATUS_ALIASES = {
   beaten: "beaten",
@@ -345,29 +347,179 @@ async function mapPool(items, limit, mapper) {
   return results;
 }
 
-function readCache() {
+function slimRawg(rawg) {
+  if (!rawg) return null;
+  return {
+    id: rawg.id ?? null,
+    slug: rawg.slug || "",
+    name: rawg.name || "",
+    background_image: rawg.background_image || "",
+    released: rawg.released || "",
+    description_raw: rawg.description_raw || "",
+    description: rawg.description_raw ? "" : rawg.description || "",
+    genres: (rawg.genres || []).map((g) => ({ name: g.name })).filter((g) => g.name),
+    parent_platforms: (rawg.parent_platforms || []).map((p) => ({
+      platform: { name: p.platform?.name || "" },
+    })),
+    metacritic: typeof rawg.metacritic === "number" ? rawg.metacritic : null,
+    ratings_count: Number(rawg.ratings_count) || 0,
+  };
+}
+
+function hasRawgDescription(rawg) {
+  return Boolean(rawg?.description_raw || rawg?.description);
+}
+
+function emptyMetaCache() {
+  return { records: {}, byId: {}, bySlug: {}, byTitle: {} };
+}
+
+function readMetaCache() {
   try {
-    const raw = sessionStorage.getItem(CACHE_KEY);
+    const raw = localStorage.getItem(META_CACHE_KEY);
+    if (!raw) return emptyMetaCache();
+    const parsed = JSON.parse(raw);
+    const now = Date.now();
+    const cache = emptyMetaCache();
+    for (const [key, entry] of Object.entries(parsed.records || {})) {
+      if (!entry?.savedAt || now - entry.savedAt > META_TTL_MS || !entry.rawg) {
+        continue;
+      }
+      cache.records[key] = entry;
+    }
+    cache.byId = parsed.byId || {};
+    cache.bySlug = parsed.bySlug || {};
+    cache.byTitle = parsed.byTitle || {};
+    return cache;
+  } catch {
+    return emptyMetaCache();
+  }
+}
+
+function persistJson(key, value) {
+  const payload = JSON.stringify(value);
+  try {
+    localStorage.setItem(key, payload);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function writeMetaCache(cache) {
+  const payload = {
+    records: cache.records,
+    byId: cache.byId,
+    bySlug: cache.bySlug,
+    byTitle: cache.byTitle,
+  };
+  if (persistJson(META_CACHE_KEY, payload)) return;
+  const entries = Object.entries(cache.records).sort(
+    (a, b) => (a[1].savedAt || 0) - (b[1].savedAt || 0)
+  );
+  const drop = Math.ceil(entries.length / 2);
+  for (let i = 0; i < drop; i += 1) {
+    delete cache.records[entries[i][0]];
+  }
+  persistJson(META_CACHE_KEY, {
+    records: cache.records,
+    byId: cache.byId,
+    bySlug: cache.bySlug,
+    byTitle: cache.byTitle,
+  });
+}
+
+function metaRecordKey(rawg, item) {
+  if (rawg?.id != null) return `id:${rawg.id}`;
+  if (item?.rawgId) return `id:${item.rawgId}`;
+  const slug = String(rawg?.slug || item?.slug || "").toLowerCase();
+  if (slug) return `slug:${slug}`;
+  return `title:${canonicalTitle(rawg?.name || item?.title || "")}`;
+}
+
+function lookupCachedRawg(cache, item) {
+  const keys = [];
+  if (item.rawgId) keys.push(cache.byId[item.rawgId]);
+  if (item.slug) keys.push(cache.bySlug[item.slug.toLowerCase()]);
+  const titleKey = canonicalTitle(item.title);
+  if (titleKey) keys.push(cache.byTitle[titleKey]);
+  for (const key of keys) {
+    const entry = key ? cache.records[key] : null;
+    if (entry?.rawg) return entry.rawg;
+  }
+  return null;
+}
+
+function rememberRawg(cache, item, rawg) {
+  const slim = slimRawg(rawg);
+  if (!slim) return;
+  const key = metaRecordKey(slim, item);
+  cache.records[key] = { savedAt: Date.now(), rawg: slim };
+  if (slim.id != null) cache.byId[String(slim.id)] = key;
+  if (item.rawgId) cache.byId[String(item.rawgId)] = key;
+  if (slim.slug) cache.bySlug[slim.slug.toLowerCase()] = key;
+  if (item.slug) cache.bySlug[item.slug.toLowerCase()] = key;
+  const titles = [canonicalTitle(slim.name), canonicalTitle(item.title)].filter(
+    Boolean
+  );
+  for (const title of titles) {
+    cache.byTitle[title] = key;
+  }
+}
+
+function readAccountCache() {
+  if (!RAWG_USERNAME) return null;
+  try {
+    const raw = localStorage.getItem(ACCOUNT_CACHE_KEY);
     if (!raw) return null;
     const parsed = JSON.parse(raw);
-    if (!parsed?.savedAt || Date.now() - parsed.savedAt > CACHE_TTL_MS) {
+    if (!parsed?.savedAt || Date.now() - parsed.savedAt > ACCOUNT_TTL_MS) {
       return null;
     }
-    return parsed.games || null;
+    return Array.isArray(parsed.games) ? parsed.games : null;
   } catch {
     return null;
   }
 }
 
-function writeCache(games) {
-  try {
-    sessionStorage.setItem(
-      CACHE_KEY,
-      JSON.stringify({ savedAt: Date.now(), games })
-    );
-  } catch {
-    /* ignore quota / private mode */
+function writeAccountCache(games) {
+  persistJson(ACCOUNT_CACHE_KEY, { savedAt: Date.now(), games });
+}
+
+async function resolveRawg(item, cache) {
+  const cached = lookupCachedRawg(cache, item);
+  if (cached && (hasRawgDescription(cached) || cached.background_image)) {
+    if (!hasRawgDescription(cached) && (item.rawgId || item.slug || cached.slug || cached.id)) {
+      try {
+        const detailed = await fetchRawgDetails(
+          item.rawgId || item.slug || cached.slug || cached.id,
+          RAWG_API_KEY
+        );
+        rememberRawg(cache, item, detailed);
+        return detailed;
+      } catch {
+        return cached;
+      }
+    }
+    return cached;
   }
+
+  let rawg = item.rawgPreview || null;
+  if (item.rawgId || item.slug) {
+    rawg = await fetchRawgDetails(item.rawgId || item.slug, RAWG_API_KEY);
+  } else if (item.title) {
+    const results = await searchRawg(item.title, RAWG_API_KEY);
+    const match = pickSearchResult(results, item.title, item.yearHint);
+    if (match?.slug || match?.id) {
+      try {
+        rawg = await fetchRawgDetails(match.slug || match.id, RAWG_API_KEY);
+      } catch {
+        rawg = match;
+      }
+    }
+  }
+  if (rawg) rememberRawg(cache, item, rawg);
+  return rawg;
 }
 
 function mergeGame(personal, rawg) {
@@ -410,11 +562,6 @@ export async function loadVideoGameLibrary() {
     throw new Error("Missing VITE_RAWG_API_KEY. Add it to your local .env file.");
   }
 
-  const cached = readCache();
-  if (cached) {
-    return { games: cached, notice: missingUsernameNotice() };
-  }
-
   const list = await fetchJson(VIDEOGAMES_JSON_URL);
   if (!Array.isArray(list)) {
     throw new Error("Video game list JSON must be an array.");
@@ -427,48 +574,38 @@ export async function loadVideoGameLibrary() {
   let accountOk = !RAWG_USERNAME;
 
   if (RAWG_USERNAME) {
-    try {
-      const accountGames = await fetchAllUserGames(RAWG_USERNAME, RAWG_API_KEY);
-      accountItems = accountGames
-        .map(normalizeUserGame)
-        .filter(isUsableListItem);
+    const cachedAccount = readAccountCache();
+    if (cachedAccount) {
+      accountItems = cachedAccount;
       accountOk = true;
-    } catch {
-      notice =
-        "Could not load RAWG account games. Showing the local list.";
-      accountOk = false;
+    } else {
+      try {
+        const accountGames = await fetchAllUserGames(RAWG_USERNAME, RAWG_API_KEY);
+        accountItems = accountGames
+          .map(normalizeUserGame)
+          .filter(isUsableListItem);
+        writeAccountCache(accountItems);
+        accountOk = true;
+      } catch {
+        notice =
+          "Could not load RAWG account games. Showing the local list.";
+        accountOk = false;
+      }
     }
   }
 
   const personal = mergeLibraryItems(cdnItems, accountItems);
+  const metaCache = readMetaCache();
 
   const games = await mapPool(personal, 4, async (item) => {
     try {
-      let rawg = item.rawgPreview || null;
-      if (!rawg) {
-        if (item.rawgId || item.slug) {
-          rawg = await fetchRawgDetails(item.rawgId || item.slug, RAWG_API_KEY);
-        } else if (item.title) {
-          const results = await searchRawg(item.title, RAWG_API_KEY);
-          const match = pickSearchResult(results, item.title, item.yearHint);
-          if (match?.slug || match?.id) {
-            try {
-              rawg = await fetchRawgDetails(
-                match.slug || match.id,
-                RAWG_API_KEY
-              );
-            } catch {
-              rawg = match;
-            }
-          }
-        }
-      }
+      const rawg = await resolveRawg(item, metaCache);
       return mergeGame(item, rawg);
     } catch {
-      return mergeGame(item, item.rawgPreview || null);
+      return mergeGame(item, lookupCachedRawg(metaCache, item) || item.rawgPreview || null);
     }
   });
 
-  if (accountOk) writeCache(games);
+  writeMetaCache(metaCache);
   return { games, notice };
 }

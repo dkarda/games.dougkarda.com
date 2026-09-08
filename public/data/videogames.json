@@ -1,847 +1,2737 @@
 [
-    {
-        "Title":"A Plague Tale: Innocence",
-        "slug": "a-plague-tale-innocence",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-    {
-        "Title":"A Plague Tale: Requiem",
-        "slug": "a-plague-tale-requiem",
-        "own": "y",
-        "mainStory": "toplay",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"God of War",
-        "slug": "god-of-war-2",
-        "own": "y",
-        "mainStory": "complete",
-        "fullGame": "One valkyrie left",
-        "score": 10
-      },
-      {
-        "Title":"God of War III",
-        "slug": "god-of-war-iii",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"Uncharted: Drake's Fortune",
-        "slug": "uncharted-drakes-fortune",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"Uncharted 2: Among Thieves",
-        "slug": "uncharted-2-among-thieves",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 9
-      },
-      {
-        "Title":"Uncharted 3: Drake's Deception",
-        "slug": "uncharted-3-drakes-deception",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 10
-      },
-      {
-        "Title":"Uncharted: The Lost Legacy",
-        "slug": "uncharted-the-lost-legacy",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 9
-      },
-      {
-        "Title":"Uncharted 4: A Thief's End",
-        "slug": "uncharted-4-a-thiefs-end",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 10
-      },
-      {
-        "Title":"The Last of Us",
-        "slug": "the-last-of-us",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 10
-      },
-      {
-        "Title":"The Last of Us: Left Behind",
-        "slug": "the-last-of-us-left-behind",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"Spider-Man",
-        "slug": "marvels-spider-man",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "complete",
-        "score": 10
-      },
-      {
-        "Title":"Spider-Man: Miles Morales",
-        "slug": "spider-man-miles-morales",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "complete",
-        "score": 8
-      },
-      {
-        "Title":"Spider-Man 2",
-        "slug": "spider-man-2",
-        "Year":"2023",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "complete",
-        "score": 9
-      },
-      {
-        "Title":"Batman: Arkham Asylum",
-        "slug": "batman-arkham-asylum",
-        "mainStory": "played",
-        "fullGame": "pass",
-        "score": 10
-      },
-      {
-        "Title":"Batman: Arkham City",
-        "slug": "batman-arkham-city-2",
-        "own": "n",
-        "mainStory": "played",
-        "fullGame": "pass",
-        "score": 10
-      },
-      {
-        "Title":"Batman: Arkham Knight",
-        "slug": "batman-arkham-knight",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "pass",
-        "score": 10
-      },
-      {
-        "Title":"Batman: Arkham VR",
-        "slug": "batman-arkham-vr",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"Batman: The Telltale Series",
-        "slug": "batman-the-telltale-series",
-        "own": "y",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Tomb Raider",
-        "slug": "tomb-raider",
-        "own": "y",
-        "format": "PS4 digital",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"Rise of the Tomb Raider",
-        "slug": "rise-of-the-tomb-raider",
-        "own": "y",
-        "version": "PS4",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 9
-      },
-      {
-        "Title":"Shadow of the Tomb Raider",
-        "slug": "shadow-of-the-tomb-raider",
-        "own": "y",
-        "format": "PS4 digital",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 9
-      },
-      {
-        "Title":"The Elder Scrolls V: Skyrim",
-        "slug": "the-elder-scrolls-v-skyrim",
-        "own": "y",
-        "psvr": "y",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 10
-      },
-      {
-        "Title":"The Elder Scrolls IV: Oblivion",
-        "slug": "the-elder-scrolls-iv-oblivion",
-        "own": "n",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 10
-      },
-      {
-        "Title":"Elder Scrolls Online",
-        "slug": "the-elder-scrolls-online",
-        "own": "y",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 7
-      },
-      {
-        "Title":"South Park: The Stick of Truth",
-        "slug": "south-park-the-stick-of-truth",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"South Park: The Fractured But Whole",
-        "slug": "south-park-the-fractured-but-whole",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 9
-      },
-      {
-        "Title":"King's Quest",
-        "slug": "kings-quest",
-        "own": "y",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Middle-Earth: Shadow of Mordor",
-        "slug": "shadow-of-mordor",
-        "own": "y",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Middle-Earth: Shadow of War",
-        "slug": "middle-earth-shadow-of-war",
-        "own": "y",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Erica",
-        "slug": "erica",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 7
-      },
-      {
-        "Title":"Star Wars Jedi: Fallen Order",
-        "slug": "jedi-the-fallen-order",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"Star Wars: Battlefront",
-        "slug": "star-wars-battlefront",
-        "own": "y",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Star Wars: Battlefront II",
-        "slug": "star-wars-battlefront-2",
-        "own": "y",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Star Wars: Squadrons",
-        "slug": "star-wars-squadrons",
-        "own": "y",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Star Wars Outlaws",
-        "slug": "star-wars-outlaws",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"Dead Space",
-        "slug": "dead-space",
-        "own": "n",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 9
-      },
-      {
-        "Title":"Dead Space 2",
-        "slug": "dead-space-2",
-        "own": "n",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 10
-      },
-      {
-        "Title":"Dead Space 3",
-        "slug": "dead-space-3",
-        "own": "n",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 9
-      },
-      {
-        "Title":"RIGS: Machine Combat League",
-        "slug": "rigs-mechanized-combat-league",
-        "own": "y",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Robinson: The Journey",
-        "slug": "robinson-the-journey",
-        "own": "y",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Rocksmith 2014",
-        "slug": "rocksmith-2014",
-        "own": "y",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"MLB 14: The Show",
-        "slug": "mlb-14-the-show",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"Playstation VR Worlds",
-        "slug": "playstation-vr-worlds",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"Playstation VR demo disc",
-        "slug": "playstation-vr-demo-disc",
-        "poster": "psvr-demo-disk",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Call of Duty: Infinite Warfare",
-        "slug": "call-of-duty-infinite-warfare",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 7
-      },
-      {
-        "Title":"Call of Duty: Advanced Warfare",
-        "slug": "call-of-duty-advanced-warfare",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"Call of Duty: Ghosts",
-        "slug": "call-of-duty-ghosts",
-        "own": "n",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"Call of Duty: Black Ops 4",
-        "slug": "call-of-duty-black-ops-4",
-        "own": "y",
-        "format": "PS4 PS+ digital",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 7
-      },
-      {
-        "Title":"Call of Duty: Black Ops Cold War",
-        "slug": "call-of-duty-black-ops-cold-war",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Call of Duty: Black Ops III",
-        "slug": "cod-black-ops-iii",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"Call of Duty: Warzone",
-        "slug": "call-of-duty-warzone",
-        "own": "y",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Call of Duty: Modern Warfare 2",
-        "slug": "modern-warfare-2",
-        "own": "y",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Call of Duty: Modern Warfare Remastered",
-        "slug": "call-of-duty-modern-warfare-remastered",
-        "own": "y",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Call of Duty: WWII",
-        "slug": "call-of-duty-wwii",
-        "own": "y",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 9
-      },
-      {
-        "Title":"Tom Clancy's The Division",
-        "slug": "tom-clancys-the-division",
-        "own": "y",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Rock Band 4",
-        "slug": "rock-band-4",
-        "own": "y",
-        "format": "PS4 disc",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 9
-      },
-      {
-        "Title":"Destiny",
-        "slug": "destiny",
-        "own": "y",
-        "format": "PS4 disc",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 7
-      },
-      {
-        "Title":"Destiny: The Taken King",
-        "slug": "destiny-the-taken-king",
-        "own": "y",
-        "format": "PS4 disc",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Destiny 2",
-        "slug": "destiny-2",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"100FT Robot Golf",
-        "slug": "100ft-robot-golf",
-        "own": "y",
-        "format": "PS4 digital",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"PGA Tour 2K21",
-        "slug": "pga-tour-2k21",
-        "own": "y",
-        "format": "PS4 PS+ digital",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"The Walking Dead: Saints & Sinners",
-        "slug": "the-walking-dead-saints-sinners",
-        "own": "y",
-        "format": "PS4 PS+ digital",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Kingdoms of Amalur: Reckoning",
-        "slug": "kingdoms-of-amalur-reckoning",
-        "own": "y",
-        "format": "PS4 PS+ digital",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"The Persistence",
-        "slug": "the-persistence",
-        "own": "y",
-        "format": "PS5 PS+ enhanced digital",
-        "psvr": "y",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Until You Fall",
-        "slug": "until-you-fall",
-        "format": "PS4 PS+ digital",
-        "psvr": "y",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Hell Let Loose",
-        "slug": "hell-let-loose",
-        "format": "PS5 PS+ digital",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Tennis World Tour 2",
-        "slug": "tennis-world-tour-2",
-        "own": "y",
-        "format": "PS4 PS+ digital",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Until Dawn",
-        "slug": "until-dawn",
-        "own": "y",
-        "format": "PS4 digital",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 7
-      },
-      {
-        "Title":"Spider-Man: Far From Home - Virtual Reality Experience",
-        "slug":"spider-man-far-from-home-virtual-reality",
-        "own": "y",
-        "format": "PS4 digital",
-        "psvr": "y",
-        "mainStory": "toplay",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Red Dead Redemption II",
-        "slug":"red-dead-redemption-2",
-        "own": "y",
-        "format": "PS4 digital",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 10
-      },
-      {
-        "Title":"The Swapper",
-        "slug": "the-swapper",
-        "own": "y",
-        "format": "PS4 digital",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Alien: Isolation",
-        "slug": "alien-isolation",
-        "own": "y",
-        "format": "PS4 digital",
-        "mainStory": "toplay",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Until Dawn: Rush of Blood",
-        "slug": "until-dawn-rush-of-blood",
-        "own": "y",
-        "format": "PS4 digital",
-        "mainStory": "toplay",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Rory McIlroy PGA Tour",
-        "slug": "ea-sports-rory-mcilroy-pga-tour",
-        "own": "y",
-        "format": "PS4 digital",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 7
-      },
-      {
-        "Title":"Hollow Knight",
-        "slug": "hollow-knight",
-        "own": "y",
-        "format": "PS4 PS+ digital",
-        "mainStory": "playing",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Oddworld: Soulstorm",
-        "slug": "oddworld-soulstorm",
-        "mainStory": "unplayed",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"The Last of Us: Part II",
-        "slug": "the-last-of-us-part-2",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "played",
-        "fullGame": "complete",
-        "score": 9
-      },
-      {
-        "Title":"The Witcher 3: Wild Hunt",
-        "slug": "the-witcher-3-wild-hunt",
-        "own": "y",
-        "format": "PS4/PS5 digital",
-        "mainStory": "played",
-        "fullGame": "complete",
-        "addons": [
-          { "Hearts of Stone": "done" },
-          { "Blood and Wine": "done" }
-        ],        
-        "score": 10
-      },
-      {
-        "Title":"Mad Max",
-        "slug": "mad-max",
-        "own": "y",
-        "format": "PS4 digital",
-        "mainStory": "played",
-        "fullGame": "",
-        "score": 8
-      },
-      {
-        "Title":"EA SPORTS FC 26",
-        "slug": "ea-sports-fc-26",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"EA SPORTS NHL 26",
-        "slug": "ea-sports-nhl-26",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Diablo IV",
-        "slug": "diablo-iv",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"NBA 2K25",
-        "slug": "nba-2k25",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"The Texas Chain Saw Massacre",
-        "slug": "the-texas-chain-saw-massacre",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Drums Rock",
-        "slug": "drums-rock",
-        "own": "y",
-        "format": "PS5 PSVR2 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Madison VR",
-        "slug": "madison-vr",
-        "own": "y",
-        "format": "PS5 PSVR2 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Walkabout Mini Golf",
-        "slug": "walkabout-mini-golf",
-        "own": "y",
-        "format": "PS5 PSVR2 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"Epic Roller Coasters",
-        "slug": "epic-roller-coasters",
-        "own": "y",
-        "format": "PS5 PSVR2 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"",
-        "slug": "",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"",
-        "slug": "",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"",
-        "slug": "",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"",
-        "slug": "",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"",
-        "slug": "",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"",
-        "slug": "",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"",
-        "slug": "",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"",
-        "slug": "",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"",
-        "slug": "",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
-      },
-      {
-        "Title":"",
-        "slug": "",
-        "own": "y",
-        "format": "PS5 digital",
-        "mainStory": "",
-        "fullGame": "",
-        "score": 0
+  {
+    "Title": "100FT Robot Golf",
+    "slug": "100ft-robot-golf",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "A Plague Tale: Innocence",
+    "slug": "a-plague-tale-innocence",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "A Plague Tale: Requiem",
+    "slug": "a-plague-tale-requiem",
+    "own": "y",
+    "mainStory": "toplay",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "ACE COMBAT 7: SKIES UNKNOWN",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "AEW: Fight Forever",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Alan Wake Remastered",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Alien: Isolation",
+    "slug": "alien-isolation",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "toplay",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Aliens: Dark Descent",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Aliens: Fireteam Elite",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Alone in the Dark Prologue",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Among Us",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "ANYWHEREVR",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "ARCADE GAME SERIES: PAC-MAN",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "ARK: Survival Ascended",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "ARK: SURVIVAL EVOLVED",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "ASSASSIN'S CREED IV BLACK FLAG",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Assassin's Creed Odyssey",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Assassin's Creed The Ezio Collection",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Assassin's Creed Unity",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "ASTRO's PLAYROOM",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Atlas Fallen",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Axiom Verge 2",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Batman: Arkham Asylum",
+    "slug": "batman-arkham-asylum",
+    "mainStory": "played",
+    "fullGame": "pass",
+    "score": 10
+  },
+  {
+    "Title": "Batman: Arkham City",
+    "slug": "batman-arkham-city-2",
+    "own": "n",
+    "mainStory": "played",
+    "fullGame": "pass",
+    "score": 10
+  },
+  {
+    "Title": "Batman: Arkham Knight",
+    "slug": "batman-arkham-knight",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "pass",
+    "score": 10
+  },
+  {
+    "Title": "Batman: Arkham Knight",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Batman: Arkham Origins",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Batman: Arkham VR",
+    "slug": "batman-arkham-vr",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "Batman: The Telltale Series",
+    "slug": "batman-the-telltale-series",
+    "own": "y",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Battlefield 1",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Battlefield 2042",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Battlefield V",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "BEYOND: Two Souls",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Biomutant",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Bloodborne",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Borderlands 3",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Borderlands: The Handsome Collection",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Bugsnax",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Call of Duty",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Call of Duty: Advanced Warfare",
+    "slug": "call-of-duty-advanced-warfare",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "Call of Duty: Black Ops 4",
+    "slug": "call-of-duty-black-ops-4",
+    "own": "y",
+    "format": "PS4 PS+ digital",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 7
+  },
+  {
+    "Title": "Call of Duty: Black Ops Cold War",
+    "slug": "call-of-duty-black-ops-cold-war",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Call of Duty: Black Ops III",
+    "slug": "cod-black-ops-iii",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "Call of Duty: Ghosts",
+    "slug": "call-of-duty-ghosts",
+    "own": "n",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "Call of Duty: Infinite Warfare",
+    "slug": "call-of-duty-infinite-warfare",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 7
+  },
+  {
+    "Title": "Call Of Duty: Infinite Warfare Jackal Assault VR Experience",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Call of Duty: Modern Warfare",
+    "own": "y",
+    "format": "PS5 / PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Call of Duty: Modern Warfare 2",
+    "slug": "modern-warfare-2",
+    "own": "y",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Call of Duty: Modern Warfare 2 Campaign Remastered",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Call of Duty: Modern Warfare III",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Call of Duty: Modern Warfare Remastered",
+    "slug": "call-of-duty-modern-warfare-remastered",
+    "own": "y",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Call of Duty: Vanguard",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Call of Duty: Warzone",
+    "slug": "call-of-duty-warzone",
+    "own": "y",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Call of Duty: WWII",
+    "slug": "call-of-duty-wwii",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 9
+  },
+  {
+    "Title": "Chernobylite Complete Edition",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Chess Ultra",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "CODE VEIN",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Control: Ultimate Edition",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Crash Bandicoot N. Sane Trilogy",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Cricket 24",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "CRSED",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Curse of the Dead Gods",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Cyberpunk 2077",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Darksiders II Deathinitive Edition",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Darksiders III",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Days Gone",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Dead by Daylight",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Dead Space",
+    "slug": "dead-space",
+    "own": "n",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 9
+  },
+  {
+    "Title": "Dead Space 2",
+    "slug": "dead-space-2",
+    "own": "n",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 10
+  },
+  {
+    "Title": "Dead Space 3",
+    "slug": "dead-space-3",
+    "own": "n",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 9
+  },
+  {
+    "Title": "DEATH STRANDING DIRECTOR'S CUT",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Demeo",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Demon's Souls",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Destiny",
+    "slug": "destiny",
+    "own": "y",
+    "format": "PS4 disc",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 7
+  },
+  {
+    "Title": "Destiny",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Destiny 2",
+    "slug": "destiny-2",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Destiny: The Taken King",
+    "slug": "destiny-the-taken-king",
+    "own": "y",
+    "format": "PS4 disc",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Destroy All Humans! 2",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Detroit: Become Human",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Diablo IV",
+    "slug": "diablo-iv",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "DiRT Rally 2.0",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Dragon Age: The Veilguard",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Draw Slasher",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "DRIVECLUB VR",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Drums Rock",
+    "slug": "drums-rock",
+    "own": "y",
+    "format": "PS5 PSVR2 digital",
+    "mainStory": "",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Dying Light 2 Stay Human PS5",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "EA SPORTS FC 26",
+    "slug": "ea-sports-fc-26",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "EA SPORTS FC 26",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "EA SPORTS NHL 18",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "EA SPORTS NHL 26",
+    "slug": "ea-sports-nhl-26",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "EA SPORTS PGA TOUR",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "EA SPORTS Rory McIlroy PGA TOUR",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "EAS FC 24 (EA Sports Football Club 24)",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "ELDEN RING",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Elder Scrolls Online",
+    "slug": "the-elder-scrolls-online",
+    "own": "y",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 7
+  },
+  {
+    "Title": "ENDER LILIES: Quietus of the Knights",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Endling - Extinction is Forever",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Epic Roller Coasters",
+    "slug": "epic-roller-coasters",
+    "own": "y",
+    "format": "PS5 PSVR2 digital",
+    "mainStory": "",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Erica",
+    "slug": "erica",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 7
+  },
+  {
+    "Title": "Evil Dead: The Game",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Evil West",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Fallout 4",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Fallout 76",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Farpoint",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "FIFA 22",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "FINAL FANTASY VII REMAKE",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "FINAL FANTASY XV",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Five Nights at Freddy's: Help Wanted - Full Time Edition",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Five Nights at Freddy's: Help Wanted 2",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Five Nights at Freddy's: Security Breach",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Fortnite",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "GAUNTLET: SLAYER EDITION",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Ghost of Tsushima DIRECTOR'S CUT",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Ghostrunner",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "God of War",
+    "slug": "god-of-war-2",
+    "own": "y",
+    "mainStory": "complete",
+    "fullGame": "One valkyrie left",
+    "score": 10
+  },
+  {
+    "Title": "God of War III",
+    "slug": "god-of-war-iii",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "God of War III Remastered",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "God of War Ragnarök",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Grand Theft Auto III – The Definitive Edition",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Grand Theft Auto V & Grand Theft Auto: San Andreas",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Grand Theft Auto V (PS5)",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Green Hell",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Gunjack",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Harry Potter: Quidditch Champions",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Heavy Rain",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Hell Let Loose",
+    "slug": "hell-let-loose",
+    "format": "PS5 PS+ digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Here They Lie",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "High On Life",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "HITMAN",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Hogwarts Legacy",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Hollow Knight",
+    "slug": "hollow-knight",
+    "own": "y",
+    "format": "PS4 PS+ digital",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Hollow Knight Voidheart Edition",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Hood: Outlaws & Legends",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Horizon Call of the Mountain",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Horizon Forbidden West",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Horizon Zero Dawn: Complete Edition",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "HUSTLE KINGS FREE TO PLAY",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "inFAMOUS Second Son",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "INVASION!",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "It Takes Two PS4 & PS5",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Jak and Daxter: The Precursor Legacy",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Jurassic World Aftermath Collection",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Jurassic World Evolution 2",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Just Cause 4",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Killing Floor 3",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "King's Quest",
+    "slug": "kings-quest",
+    "own": "y",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "KINGDOM HEARTS VR Experience",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Kingdoms of Amalur: Re-Reckoning",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Kingdoms of Amalur: Reckoning",
+    "slug": "kingdoms-of-amalur-reckoning",
+    "own": "y",
+    "format": "PS4 PS+ digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Lara Croft and the Temple of Osiris",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "LEGO Harry Potter Collection",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "LEGO Star Wars: The Skywalker Saga",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Little Nightmares",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Little Nightmares II",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Lords of the Fallen",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Mad Max",
+    "slug": "mad-max",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "Madden NFL 18",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Madison VR",
+    "slug": "madison-vr",
+    "own": "y",
+    "format": "PS5 PSVR2 digital",
+    "mainStory": "",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Mafia II: Definitive Edition",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Mafia: Definitive Edition",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Maneater",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Maquette",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Marvel's Spider-Man",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Marvel's Spider-Man 2",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Marvel's Spider-Man: Miles Morales",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Mass Effect Legendary Edition",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Meet Your Maker: Scorched Necropolis Collection",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "METAL GEAR SOLID V: THE DEFINITIVE EXPERIENCE",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Metal: Hellsinger",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Middle-Earth: Shadow of Mordor",
+    "slug": "shadow-of-mordor",
+    "own": "y",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "MIDDLE-EARTH: SHADOW OF MORDOR - GAME OF THE YEAR EDITION",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Middle-Earth: Shadow of War",
+    "slug": "middle-earth-shadow-of-war",
+    "own": "y",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "MLB",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "MLB 14: The Show",
+    "slug": "mlb-14-the-show",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "MLB THE SHOW 17",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "MLB The Show 18",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "MLB THE SHOW 19",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "MLB The Show 24",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Monster Energy Supercross - The Official Videogame",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "MONSTER HUNTER: WORLD",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Mortal Kombat X",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "My First Gran Turismo",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "NBA 2K20",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "NBA 2K23",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "NBA 2K25",
+    "slug": "nba-2k25",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "NBA LIVE 18: The One Edition",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "NFL",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "NHL 24",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "NHL 26",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Nioh",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "NIOH 2",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Oddworld: Soulstorm",
+    "slug": "oddworld-soulstorm",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Oddworld: Soulstorm Enhanced Edition",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Outlast 2",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Payday 3 Pre-order Edition",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Persona 5",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "PGA Tour 2K21",
+    "slug": "pga-tour-2k21",
+    "own": "y",
+    "format": "PS4 PS+ digital",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "PGA TOUR 2K23",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "PGA TOUR 2K25",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "PINBALL ARCADE",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Pinball FX",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Pinball Heroes",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Pistol Whip",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Planet Coaster: Console Edition",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Playstation VR demo disc",
+    "slug": "playstation-vr-demo-disc",
+    "poster": "psvr-demo-disk",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Playstation VR Worlds",
+    "slug": "playstation-vr-worlds",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "PokerStars VR",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "PROMINENCE POKER",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Q*Bert: Rebooted",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Ratchet & Clank",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Red Dead Redemption 2",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Red Dead Redemption II",
+    "slug": "red-dead-redemption-2",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 10
+  },
+  {
+    "Title": "Remnant: From the Ashes",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "RESIDENT EVIL 2",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Resident Evil 4",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "RESIDENT EVIL 7 biohazard",
+    "own": "y",
+    "format": "PS5 / PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "RESIDENT EVIL REVELATIONS 2",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Resident Evil Village",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Returnal",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "RIGS: Machine Combat League",
+    "slug": "rigs-mechanized-combat-league",
+    "own": "y",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Rise of the Tomb Raider",
+    "slug": "rise-of-the-tomb-raider",
+    "own": "y",
+    "version": "PS4",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 9
+  },
+  {
+    "Title": "Rise of the Tomb Raider: 20 Year Celebration",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Robinson: The Journey",
+    "slug": "robinson-the-journey",
+    "own": "y",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "RoboCop: Rogue City",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Rock Band 4",
+    "slug": "rock-band-4",
+    "own": "y",
+    "format": "PS4 disc",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 9
+  },
+  {
+    "Title": "Rocksmith 2014",
+    "slug": "rocksmith-2014",
+    "own": "y",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "Rocksmith 2014 Edition",
+    "own": "y",
+    "format": "PS5 / PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Rocksmith+",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Rollercoaster Dreams",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Rory McIlroy PGA Tour",
+    "slug": "ea-sports-rory-mcilroy-pga-tour",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 7
+  },
+  {
+    "Title": "Sackboy: A Big Adventure",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "SHADOW OF THE COLOSSUS",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Shadow of the Tomb Raider",
+    "slug": "shadow-of-the-tomb-raider",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 9
+  },
+  {
+    "Title": "SIGNALIS",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "SILENT HILL: The Short Message",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Sniper Elite 4",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "SOMA",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "SONIC FORCES",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Soul Dimension",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "South Park: The Fractured But Whole",
+    "slug": "south-park-the-fractured-but-whole",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 9
+  },
+  {
+    "Title": "South Park: The Fractured but Whole",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "South Park: The Stick of Truth",
+    "slug": "south-park-the-stick-of-truth",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "South Park: The Stick of Truth",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Spider-Man",
+    "slug": "marvels-spider-man",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "complete",
+    "score": 10
+  },
+  {
+    "Title": "Spider-Man 2",
+    "slug": "spider-man-2",
+    "Year": "2023",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "complete",
+    "score": 9
+  },
+  {
+    "Title": "Spider-Man: Far From Home - Virtual Reality Experience",
+    "slug": "spider-man-far-from-home-virtual-reality",
+    "own": "y",
+    "format": "PS4 digital",
+    "psvr": "y",
+    "mainStory": "toplay",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Spider-Man: Homecoming - Virtual Reality Experience",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Spider-Man: Miles Morales",
+    "slug": "spider-man-miles-morales",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "complete",
+    "score": 8
+  },
+  {
+    "Title": "SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "SpongeBob SquarePants: The Cosmic Shake",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Sports Bar VR",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Star Wars Battlefront",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "STAR WARS Battlefront II",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "STAR WARS Demolition",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Star Wars Jedi: Fallen Order",
+    "slug": "jedi-the-fallen-order",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "STAR WARS Jedi: Fallen Order",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "STAR WARS Jedi: Survivor",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Star Wars Outlaws",
+    "slug": "star-wars-outlaws",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "STAR WARS The Clone Wars",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Star Wars: Battlefront",
+    "slug": "star-wars-battlefront",
+    "own": "y",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Star Wars: Battlefront II",
+    "slug": "star-wars-battlefront-2",
+    "own": "y",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Star Wars: Squadrons",
+    "slug": "star-wars-squadrons",
+    "own": "y",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "STAR WARS: Squadrons",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Star Wars: Tales from the Galaxy's Edge - Enhanced Edition",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "STEEP",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Stern Pinball Arcade",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Stranded Deep",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Subnautica: Below Zero",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Subside",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Suicide Squad: Kill the Justice League",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Synapse",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Tails of Iron",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Team Sonic Racing",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Tennis World Tour 2",
+    "slug": "tennis-world-tour-2",
+    "own": "y",
+    "format": "PS4 PS+ digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "TERA",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Council",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Dark Pictures Anthology: The Devil in Me PS4 & PS5",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Elder Scrolls IV: Oblivion",
+    "slug": "the-elder-scrolls-iv-oblivion",
+    "own": "n",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 10
+  },
+  {
+    "Title": "The Elder Scrolls Online: Tamriel Unlimited",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Elder Scrolls V: Skyrim",
+    "slug": "the-elder-scrolls-v-skyrim",
+    "own": "y",
+    "psvr": "y",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 10
+  },
+  {
+    "Title": "The Elder Scrolls V: Skyrim Special Edition",
+    "own": "y",
+    "format": "PS5 / PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "THE EVIL WITHIN",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Exorcist: Legion VR",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Four Kings Casino and Slots",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Last Guardian",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Last of Us",
+    "slug": "the-last-of-us",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 10
+  },
+  {
+    "Title": "The Last of Us Part I",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Last Of Us Remastered",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Last of Us: Left Behind",
+    "slug": "the-last-of-us-left-behind",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "The Last of Us: Left Behind Stand Alone",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Last of Us: Part II",
+    "slug": "the-last-of-us-part-2",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "played",
+    "fullGame": "complete",
+    "score": 9
+  },
+  {
+    "Title": "The Order: 1886",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Persistence",
+    "slug": "the-persistence",
+    "own": "y",
+    "format": "PS5 PS+ enhanced digital",
+    "psvr": "y",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "THE PLAYROOM VR",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Stanley Parable: Ultra Deluxe",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Swapper",
+    "slug": "the-swapper",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "playing",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Texas Chain Saw Massacre",
+    "slug": "the-texas-chain-saw-massacre",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Walking Dead: Saints & Sinners",
+    "slug": "the-walking-dead-saints-sinners",
+    "own": "y",
+    "format": "PS4 PS+ digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "The Witcher 3: Wild Hunt",
+    "slug": "the-witcher-3-wild-hunt",
+    "own": "y",
+    "format": "PS4/PS5 digital",
+    "mainStory": "played",
+    "fullGame": "complete",
+    "addons": [
+      {
+        "Hearts of Stone": "done"
+      },
+      {
+        "Blood and Wine": "done"
       }
+    ],
+    "score": 10
+  },
+  {
+    "Title": "The Witcher 3: Wild Hunt - Complete Edition",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Thief",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Thronebreaker: The Witcher Tales",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Tiny Tina's Assault on Dragon Keep: A Wonderlands One-shot Adventure",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Titanfall 2",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Tom Clancy's Rainbow Six Extraction",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Tom Clancy's The Division",
+    "slug": "tom-clancys-the-division",
+    "own": "y",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Tomb Raider",
+    "slug": "tomb-raider",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "Tomb Raider I-III Remastered Starring Lara Croft",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Tomb Raider: Definitive Edition",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Trackmania Turbo",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Tribes of Midgard Deluxe Edition",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "UFC 4",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Ultros",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Uncharted 2: Among Thieves",
+    "slug": "uncharted-2-among-thieves",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 9
+  },
+  {
+    "Title": "Uncharted 3: Drake's Deception",
+    "slug": "uncharted-3-drakes-deception",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 10
+  },
+  {
+    "Title": "Uncharted 4: A Thief's End",
+    "slug": "uncharted-4-a-thiefs-end",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 10
+  },
+  {
+    "Title": "UNCHARTED The Nathan Drake Collection",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Uncharted: Drake's Fortune",
+    "slug": "uncharted-drakes-fortune",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 8
+  },
+  {
+    "Title": "UNCHARTED: Legacy of Thieves Collection",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Uncharted: The Lost Legacy",
+    "slug": "uncharted-the-lost-legacy",
+    "own": "y",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 9
+  },
+  {
+    "Title": "Undisputed",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Until Dawn",
+    "slug": "until-dawn",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "played",
+    "fullGame": "",
+    "score": 7
+  },
+  {
+    "Title": "Until Dawn: Rush of Blood",
+    "slug": "until-dawn-rush-of-blood",
+    "own": "y",
+    "format": "PS4 digital",
+    "mainStory": "toplay",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Until You Fall",
+    "slug": "until-you-fall",
+    "format": "PS4 PS+ digital",
+    "psvr": "y",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "VR Ping Pong",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Walkabout Mini Golf",
+    "slug": "walkabout-mini-golf",
+    "own": "y",
+    "format": "PS5 PSVR2 digital",
+    "mainStory": "",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Warhammer 40,000: Darktide",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Weeping Doll",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Weird West",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Wolfenstein: The New Order",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Wolfenstein: The Old Blood",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Wolfenstein: Youngblood",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Wreckfest: Drive Hard. Die Last.",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "WUCHANG: Fallen Feathers",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "WWE 2K25",
+    "own": "y",
+    "format": "PS digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  },
+  {
+    "Title": "Zombie Army 4: Dead War",
+    "own": "y",
+    "format": "PS5 digital",
+    "mainStory": "unplayed",
+    "fullGame": "",
+    "score": 0
+  }
 ]
