@@ -26,7 +26,7 @@ const VideoGames = () => {
   const [query, setQuery] = useState("");
 
   const { data, isPending, isError, error, refetch, isFetching } = useQuery({
-    queryKey: ["videogames-library-v7"],
+    queryKey: ["videogames-library-v8"],
     queryFn: loadVideoGameLibrary,
     staleTime: 1000 * 60 * 60 * 6,
     retry: 1,

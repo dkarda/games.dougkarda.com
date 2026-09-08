@@ -85,20 +85,38 @@ export function normalizeListItem(item, index) {
   const title = String(item.Title ?? item.title ?? "").trim();
   const slug = item.slug ?? item.Slug ?? item.rawgSlug ?? item.rawg_slug ?? "";
   const rawgId = item.rawgId ?? item.rawg_id ?? null;
+  const poster =
+    item.Poster ??
+    item.poster ??
+    item.cover ??
+    item.image ??
+    item["videogame-cover"] ??
+    "";
+  const plot =
+    item.Plot ??
+    item.plot ??
+    item.description ??
+    item["videogame-desc"] ??
+    "";
+  const genre = item.Genre ?? item.genre ?? item["videogame-meta"] ?? "";
+  const year = item.Year ?? item.year ?? item.releasedYear ?? "";
   return {
     listIndex: index,
     title,
     slug: slug ? String(slug) : "",
     rawgId: rawgId != null && rawgId !== "" ? String(rawgId) : "",
+    skipRawg: parseSkipRawg(item),
+    preferJson: parsePreferJson(item),
     status: normalizeStatus(item),
     notes: notesFromItem(item),
     format: item.format ? String(item.format) : "",
     score: parsePersonalScore(item.score),
     own: item.own === "y" || item.own === true,
-    poster: item.Poster && item.Poster !== "N/A" ? item.Poster : "",
-    yearHint: item.Year ? String(item.Year).slice(0, 4) : "",
-    plot: item.Plot && item.Plot !== "N/A" ? String(item.Plot) : "",
-    genreHint: item.Genre && item.Genre !== "N/A" ? String(item.Genre) : "",
+    poster: poster && poster !== "N/A" ? String(poster) : "",
+    yearHint: year ? String(year).slice(0, 4) : "",
+    plot: plot && plot !== "N/A" ? String(plot) : "",
+    genreHint: genre && genre !== "N/A" ? String(genre) : "",
+    platformHint: platformsFromItem(item),
   };
 }
 
@@ -113,6 +131,35 @@ function parsePersonalScore(value) {
     return Number.isFinite(parsed) ? parsed : null;
   }
   return null;
+}
+
+function parseSkipRawg(item) {
+  if (item.skipRawg === true || item.rawg === false) return true;
+  const mode = String(item.rawg ?? "").trim().toLowerCase();
+  return mode === "off" || mode === "json" || mode === "none";
+}
+
+function parsePreferJson(item) {
+  if (item.preferJson === true) return true;
+  const mode = String(item.rawg ?? "").trim().toLowerCase();
+  return mode === "prefer-json" || mode === "preferjson";
+}
+
+function platformsFromItem(item) {
+  if (Array.isArray(item.platforms)) {
+    return item.platforms.map((p) => String(p).trim()).filter(Boolean);
+  }
+  const raw = item.Platform ?? item.platform ?? "";
+  if (!raw || raw === "N/A") return [];
+  return String(raw)
+    .split(",")
+    .map((p) => p.trim())
+    .filter(Boolean);
+}
+
+function pickMeta(jsonValue, rawgValue, preferJson) {
+  if (preferJson) return jsonValue || rawgValue || "";
+  return rawgValue || jsonValue || "";
 }
 
 function yearFromDate(released) {
@@ -162,8 +209,8 @@ function pickSearchResult(results, title, yearHint) {
   return scored[0].game;
 }
 
-async function fetchJson(url) {
-  const res = await fetch(url);
+async function fetchJson(url, options = {}) {
+  const res = await fetch(url, options);
   if (!res.ok) {
     throw new Error(`Request failed (${res.status})`);
   }
@@ -275,6 +322,9 @@ function keepCdnPersonal(cdn, account) {
     poster: cdn.poster || account.poster,
     plot: cdn.plot || account.plot,
     genreHint: cdn.genreHint || account.genreHint,
+    platformHint: cdn.platformHint?.length ? cdn.platformHint : account.platformHint,
+    skipRawg: cdn.skipRawg || account.skipRawg,
+    preferJson: cdn.preferJson || account.preferJson,
     status: cdn.status,
     notes: cdn.notes,
     format: cdn.format,
@@ -523,22 +573,54 @@ async function resolveRawg(item, cache) {
 }
 
 function mergeGame(personal, rawg) {
-  const description = shortenText(
-    stripHtml(rawg?.description_raw || rawg?.description || personal.plot)
-  );
-  const genres =
-    rawg?.genres?.map((g) => g.name).filter(Boolean) ||
-    personal.genreHint.split(",").map((g) => g.trim()).filter(Boolean);
-  const platforms =
+  const preferJson = Boolean(personal.preferJson || personal.skipRawg);
+  const jsonGenres = personal.genreHint
+    .split(",")
+    .map((g) => g.trim())
+    .filter(Boolean);
+  const rawgGenres = rawg?.genres?.map((g) => g.name).filter(Boolean) || [];
+  const genres = preferJson
+    ? jsonGenres.length
+      ? jsonGenres
+      : rawgGenres
+    : rawgGenres.length
+      ? rawgGenres
+      : jsonGenres;
+  const rawgPlatforms =
     rawg?.parent_platforms
       ?.map((p) => p.platform?.name)
       .filter(Boolean) || [];
+  const platforms = preferJson
+    ? personal.platformHint.length
+      ? personal.platformHint
+      : rawgPlatforms
+    : rawgPlatforms.length
+      ? rawgPlatforms
+      : personal.platformHint;
+
+  const description = shortenText(
+    stripHtml(
+      pickMeta(
+        personal.plot,
+        rawg?.description_raw || rawg?.description,
+        preferJson
+      )
+    )
+  );
 
   return {
     key: personal.rawgId || personal.slug || `${personal.listIndex}-${personal.title}`,
-    name: rawg?.name || personal.title || "Untitled",
-    backgroundImage: rawg?.background_image || personal.poster || "",
-    releasedYear: yearFromDate(rawg?.released) || personal.yearHint,
+    name: pickMeta(personal.title, rawg?.name, preferJson || personal.skipRawg) || "Untitled",
+    backgroundImage: pickMeta(
+      personal.poster,
+      rawg?.background_image,
+      preferJson
+    ),
+    releasedYear: pickMeta(
+      personal.yearHint,
+      yearFromDate(rawg?.released),
+      preferJson
+    ),
     genres,
     platforms,
     metacritic: typeof rawg?.metacritic === "number" ? rawg.metacritic : null,
@@ -548,7 +630,7 @@ function mergeGame(personal, rawg) {
     format: personal.format,
     score: personal.score,
     own: personal.own,
-    rawgError: !rawg,
+    rawgError: !rawg && !personal.skipRawg,
   };
 }
 
@@ -562,7 +644,7 @@ export async function loadVideoGameLibrary() {
     throw new Error("Missing VITE_RAWG_API_KEY. Add it to your local .env file.");
   }
 
-  const list = await fetchJson(VIDEOGAMES_JSON_URL);
+  const list = await fetchJson(VIDEOGAMES_JSON_URL, { cache: "no-store" });
   if (!Array.isArray(list)) {
     throw new Error("Video game list JSON must be an array.");
   }
@@ -599,10 +681,16 @@ export async function loadVideoGameLibrary() {
 
   const games = await mapPool(personal, 4, async (item) => {
     try {
+      if (item.skipRawg) {
+        return mergeGame(item, null);
+      }
       const rawg = await resolveRawg(item, metaCache);
       return mergeGame(item, rawg);
     } catch {
-      return mergeGame(item, lookupCachedRawg(metaCache, item) || item.rawgPreview || null);
+      return mergeGame(
+        item,
+        lookupCachedRawg(metaCache, item) || item.rawgPreview || null
+      );
     }
   });
 
