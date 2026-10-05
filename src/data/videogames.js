@@ -56,8 +56,12 @@ export function statusLabel(status) {
 
 export function stripHtml(value) {
   if (!value) return "";
+  const text = String(value);
+  if (!/<[a-z][\s\S]*>/i.test(text)) {
+    return text.replace(/\s+/g, " ").trim();
+  }
   const tmp = document.createElement("div");
-  tmp.innerHTML = String(value);
+  tmp.innerHTML = text;
   return (tmp.textContent || tmp.innerText || "").replace(/\s+/g, " ").trim();
 }
 
@@ -673,7 +677,9 @@ function scheduleMetaWrite() {
 
 async function loadPersonalItems(options = {}) {
   const waitForAccount = Boolean(options.waitForAccount);
-  const list = await fetchJson(VIDEOGAMES_JSON_URL, { cache: "no-store" });
+  const useAccountCache = options.useAccountCache !== false;
+  const jsonCache = import.meta.env.PROD ? "force-cache" : "no-store";
+  const list = await fetchJson(VIDEOGAMES_JSON_URL, { cache: jsonCache });
   if (!Array.isArray(list)) {
     throw new Error("Video game list JSON must be an array.");
   }
@@ -682,8 +688,8 @@ async function loadPersonalItems(options = {}) {
   let notice = missingUsernameNotice();
   let accountItems = [];
 
-  if (RAWG_USERNAME) {
-    const cachedAccount = readAccountCache();
+  if (RAWG_USERNAME && (useAccountCache || waitForAccount)) {
+    const cachedAccount = useAccountCache ? readAccountCache() : null;
     if (cachedAccount) {
       accountItems = cachedAccount;
     } else if (waitForAccount) {
@@ -707,18 +713,35 @@ async function loadPersonalItems(options = {}) {
 }
 
 export async function loadLibraryShell() {
-  if (!RAWG_API_KEY) {
-    throw new Error("Missing VITE_RAWG_API_KEY. Add it to your local .env file.");
-  }
-  const { personal, notice } = await loadPersonalItems({ waitForAccount: false });
-  const games = snapshotGames(personal, getMetaCache());
+  const { personal, notice } = await loadPersonalItems({
+    waitForAccount: false,
+    useAccountCache: false,
+  });
+  const games = personal.map((item) => mergeGame(item, null));
   return { personal, games, notice };
+}
+
+export function hydrateLibraryFromCache(personal) {
+  let items = personal;
+  if (RAWG_USERNAME) {
+    const cachedAccount = readAccountCache();
+    if (cachedAccount?.length) {
+      items = mergeLibraryItems(personal, cachedAccount);
+    }
+  }
+  return {
+    personal: items,
+    games: snapshotGames(items, getMetaCache()),
+  };
 }
 
 export async function enrichLibraryItem(item) {
   const cache = getMetaCache();
   try {
     if (item.skipRawg) return mergeGame(item, null);
+    if (!RAWG_API_KEY) {
+      return mergeGame(item, lookupCachedRawg(cache, item) || item.rawgPreview || null);
+    }
     const rawg = await resolveRawg(item, cache);
     scheduleMetaWrite();
     return mergeGame(item, rawg);

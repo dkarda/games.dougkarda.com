@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import {
   enrichLibraryItem,
+  hydrateLibraryFromCache,
   libraryItemKey,
   loadLibraryShell,
 } from "../data/videogames";
@@ -20,6 +21,7 @@ export function useVideoGameLibrary() {
   const queue = useRef([]);
   const active = useRef(0);
   const cancelled = useRef(false);
+  const hydrateHandle = useRef(0);
 
   const applyGame = useCallback((game) => {
     setGames((current) => {
@@ -79,6 +81,40 @@ export function useVideoGameLibrary() {
       setGames(shell.games);
       setNotice(shell.notice || "");
       setIsPending(false);
+
+      const hydrate = () => {
+        hydrateHandle.current = 0;
+        if (cancelled.current) return;
+        const hydrated = hydrateLibraryFromCache(shell.personal);
+        if (cancelled.current) return;
+        personalByKey.current = new Map(
+          hydrated.personal.map((item) => [libraryItemKey(item), item])
+        );
+        setGames((current) => {
+          const byKey = new Map(hydrated.games.map((game) => [game.key, game]));
+          const seen = new Set();
+          const next = current.map((game) => {
+            seen.add(game.key);
+            const cached = byKey.get(game.key);
+            if (!cached) return game;
+            if (!game.needsMeta && (game.description || game.backgroundImage)) {
+              return game;
+            }
+            return cached;
+          });
+          for (const game of hydrated.games) {
+            if (!seen.has(game.key)) next.push(game);
+          }
+          return next;
+        });
+      };
+      if (typeof window.requestIdleCallback === "function") {
+        hydrateHandle.current = window.requestIdleCallback(hydrate, {
+          timeout: 400,
+        });
+      } else {
+        hydrateHandle.current = window.setTimeout(hydrate, 0);
+      }
     } catch (err) {
       if (cancelled.current) return;
       setIsError(true);
@@ -92,6 +128,12 @@ export function useVideoGameLibrary() {
     load();
     return () => {
       cancelled.current = true;
+      if (hydrateHandle.current) {
+        if (typeof window.cancelIdleCallback === "function") {
+          window.cancelIdleCallback(hydrateHandle.current);
+        }
+        window.clearTimeout(hydrateHandle.current);
+      }
     };
   }, [load]);
 

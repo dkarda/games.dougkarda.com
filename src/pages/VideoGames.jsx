@@ -18,6 +18,48 @@ function gameSearchText(game) {
     .toLowerCase();
 }
 
+const PLAYED_STATUSES = new Set([
+  "playing",
+  "played",
+  "complete",
+  "completed",
+  "beaten",
+  "dropped",
+]);
+
+function isPlayed(game) {
+  return PLAYED_STATUSES.has(String(game.status || "").toLowerCase());
+}
+
+function compareNames(a, b) {
+  const nameA = String(a.name ?? "").trim();
+  const nameB = String(b.name ?? "").trim();
+  if (!nameA && !nameB) return 0;
+  if (!nameA) return 1;
+  if (!nameB) return -1;
+  return nameA.localeCompare(nameB, undefined, { sensitivity: "base" });
+}
+
+function compareYears(a, b) {
+  const yearA = Number.parseInt(a.releasedYear, 10);
+  const yearB = Number.parseInt(b.releasedYear, 10);
+  const hasA = Number.isFinite(yearA);
+  const hasB = Number.isFinite(yearB);
+  if (hasA && hasB && yearA !== yearB) return yearB - yearA;
+  if (hasA !== hasB) return hasA ? -1 : 1;
+  return compareNames(a, b);
+}
+
+function compareScores(a, b) {
+  const scoreA = typeof a.score === "number" ? a.score : null;
+  const scoreB = typeof b.score === "number" ? b.score : null;
+  const hasA = scoreA != null && scoreA > 0;
+  const hasB = scoreB != null && scoreB > 0;
+  if (hasA && hasB && scoreA !== scoreB) return scoreB - scoreA;
+  if (hasA !== hasB) return hasA ? -1 : 1;
+  return compareNames(a, b);
+}
+
 function VideoGameCard({ game, onVisible }) {
   const ref = useRef(null);
 
@@ -99,6 +141,8 @@ function VideoGameCard({ game, onVisible }) {
 const VideoGames = () => {
   document.title = "DEF Video Games";
   const [query, setQuery] = useState("");
+  const [playFilter, setPlayFilter] = useState("all");
+  const [sortBy, setSortBy] = useState("alpha");
   const {
     games,
     notice,
@@ -110,24 +154,23 @@ const VideoGames = () => {
     requestEnrich,
   } = useVideoGameLibrary();
 
-  const sortedGames = useMemo(() => {
-    return [...games].sort((a, b) => {
-      const nameA = String(a.name ?? "").trim();
-      const nameB = String(b.name ?? "").trim();
-      if (!nameA && !nameB) return 0;
-      if (!nameA) return 1;
-      if (!nameB) return -1;
-      return nameA.localeCompare(nameB, undefined, {
-        sensitivity: "base",
-      });
-    });
-  }, [games]);
-
   const filteredGames = useMemo(() => {
     const needle = query.trim().toLowerCase();
-    if (!needle) return sortedGames;
-    return sortedGames.filter((game) => gameSearchText(game).includes(needle));
-  }, [sortedGames, query]);
+    return games.filter((game) => {
+      if (playFilter === "played" && !isPlayed(game)) return false;
+      if (playFilter === "unplayed" && isPlayed(game)) return false;
+      if (needle && !gameSearchText(game).includes(needle)) return false;
+      return true;
+    });
+  }, [games, playFilter, query]);
+
+  const sortedGames = useMemo(() => {
+    const next = [...filteredGames];
+    if (sortBy === "year") next.sort(compareYears);
+    else if (sortBy === "score") next.sort(compareScores);
+    else next.sort(compareNames);
+    return next;
+  }, [filteredGames, sortBy]);
 
   const hasLibrary = Boolean(games.length);
 
@@ -144,6 +187,7 @@ const VideoGames = () => {
       {hasLibrary ? (
         <div className="videogames-toolbar">
           <label className="videogames-search">
+            <span className="videogames-select-label">Search</span>
             <input
               type="search"
               value={query}
@@ -154,9 +198,33 @@ const VideoGames = () => {
               spellCheck="false"
             />
           </label>
+          <label className="videogames-select">
+            <span className="videogames-select-label">Status</span>
+            <select
+              value={playFilter}
+              onChange={(event) => setPlayFilter(event.target.value)}
+              aria-label="Filter by played status"
+            >
+              <option value="all">All games</option>
+              <option value="played">Played</option>
+              <option value="unplayed">Unplayed</option>
+            </select>
+          </label>
+          <label className="videogames-select">
+            <span className="videogames-select-label">Sort</span>
+            <select
+              value={sortBy}
+              onChange={(event) => setSortBy(event.target.value)}
+              aria-label="Sort games"
+            >
+              <option value="alpha">A–Z</option>
+              <option value="year">Release year</option>
+              <option value="score">My score</option>
+            </select>
+          </label>
           <p className="videogames-count" aria-live="polite">
-            {query.trim()
-              ? `${filteredGames.length} of ${sortedGames.length}`
+            {playFilter !== "all" || query.trim()
+              ? `${sortedGames.length} of ${games.length}`
               : `${sortedGames.length} games`}
             {isEnriching ? " · loading details…" : ""}
           </p>
@@ -186,13 +254,13 @@ const VideoGames = () => {
         <p className="videogames-status">No games in the list yet.</p>
       ) : null}
 
-      {hasLibrary && query.trim() && filteredGames.length === 0 ? (
-        <p className="videogames-status">No games match that search.</p>
+      {hasLibrary && sortedGames.length === 0 ? (
+        <p className="videogames-status">No games match those filters.</p>
       ) : null}
 
-      {filteredGames.length ? (
+      {sortedGames.length ? (
         <ul className="videogames-grid">
-          {filteredGames.map((game) => (
+          {sortedGames.map((game) => (
             <VideoGameCard
               key={game.key}
               game={game}

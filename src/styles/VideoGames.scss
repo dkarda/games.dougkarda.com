@@ -27,14 +27,17 @@
 .videogames-toolbar {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
   gap: 0.75rem 1rem;
   margin: 0 auto 1.75rem;
-  max-width: 38rem;
+  max-width: 46rem;
 }
 
 .videogames-search {
   flex: 1 1 16rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .videogames-search input {
@@ -52,6 +55,35 @@
 }
 
 .videogames-search input:focus {
+  outline: 2px solid #2f8eab;
+  outline-offset: 2px;
+}
+
+.videogames-select {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  min-width: 9.5rem;
+}
+
+.videogames-select-label {
+  color: #b7c0ca;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.videogames-select select {
+  width: 100%;
+  padding: 0.7rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0.7rem;
+  background: #181a1e;
+  color: #f2f4f7;
+  font-size: 1rem;
+}
+
+.videogames-select select:focus {
   outline: 2px solid #2f8eab;
   outline-offset: 2px;
 }
