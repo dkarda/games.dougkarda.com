@@ -12,6 +12,7 @@ function gameSearchText(game) {
     game.format,
     ...(game.genres || []),
     ...(game.platforms || []),
+    ...(game.keywords || []),
   ]
     .filter(Boolean)
     .join(" ")

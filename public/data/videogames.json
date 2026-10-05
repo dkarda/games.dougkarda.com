@@ -2,6 +2,13 @@
   {
     "Title": "100FT Robot Golf",
     "slug": "100ft-robot-golf",
+    "keywords": [
+      "golf",
+      "sports",
+      "vr",
+      "mini golf",
+      "comedy"
+    ],
     "own": "y",
     "format": "PS4 digital",
     "mainStory": "unplayed",
@@ -14,7 +21,12 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 8
+    "score": 8,
+    "keywords": [
+      "asobo",
+      "stealth",
+      "narrative"
+    ]
   },
   {
     "Title": "A Plague Tale: Requiem",
@@ -22,7 +34,12 @@
     "own": "y",
     "mainStory": "toplay",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "asobo",
+      "stealth",
+      "narrative"
+    ]
   },
   {
     "Title": "ACE COMBAT 7: SKIES UNKNOWN",
@@ -30,7 +47,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "flight"
+    ]
   },
   {
     "Title": "AEW: Fight Forever",
@@ -38,7 +58,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "wrestling",
+      "sports"
+    ]
   },
   {
     "Title": "Alan Wake Remastered",
@@ -46,7 +70,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "remedy",
+      "horror"
+    ]
   },
   {
     "Title": "Alien: Isolation",
@@ -55,7 +83,11 @@
     "format": "PS4 digital",
     "mainStory": "toplay",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "sci-fi"
+    ]
   },
   {
     "Title": "Aliens: Dark Descent",
@@ -63,7 +95,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "sci-fi"
+    ]
   },
   {
     "Title": "Aliens: Fireteam Elite",
@@ -71,7 +107,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "sci-fi"
+    ]
   },
   {
     "Title": "Alone in the Dark Prologue",
@@ -79,7 +119,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "demo"
+    ]
   },
   {
     "Title": "Among Us",
@@ -87,7 +131,12 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "multiplayer",
+      "social deduction",
+      "party"
+    ]
   },
   {
     "Title": "ARCADE GAME SERIES: PAC-MAN",
@@ -119,7 +168,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "pirates",
+      "naval"
+    ]
   },
   {
     "Title": "Assassin's Creed Odyssey",
@@ -127,7 +180,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "ancient greece"
+    ]
   },
   {
     "Title": "Assassin's Creed The Ezio Collection",
@@ -151,7 +207,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "vr",
+      "platformer",
+      "ps5"
+    ]
   },
   {
     "Title": "Atlas Fallen",
@@ -159,7 +220,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "action rpg"
+    ]
   },
   {
     "Title": "Axiom Verge 2",
@@ -167,14 +231,20 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "metroidvania"
+    ]
   },
   {
     "Title": "Batman: Arkham Asylum",
     "slug": "batman-arkham-asylum",
     "mainStory": "played",
     "fullGame": "pass",
-    "score": 10
+    "score": 10,
+    "keywords": [
+      "superhero"
+    ]
   },
   {
     "Title": "Batman: Arkham City",
@@ -182,7 +252,10 @@
     "own": "n",
     "mainStory": "played",
     "fullGame": "pass",
-    "score": 10
+    "score": 10,
+    "keywords": [
+      "superhero"
+    ]
   },
   {
     "Title": "Batman: Arkham Knight",
@@ -191,7 +264,10 @@
     "format": "PS4 digital",
     "mainStory": "played",
     "fullGame": "pass",
-    "score": 10
+    "score": 10,
+    "keywords": [
+      "superhero"
+    ]
   },
   {
     "Title": "Batman: Arkham Origins",
@@ -199,7 +275,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "superhero"
+    ]
   },
   {
     "Title": "Batman: Arkham VR",
@@ -207,7 +286,10 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 8
+    "score": 8,
+    "keywords": [
+      "superhero"
+    ]
   },
   {
     "Title": "Batman: The Telltale Series",
@@ -215,7 +297,10 @@
     "own": "y",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "superhero"
+    ]
   },
   {
     "Title": "Battlefield 1",
@@ -223,7 +308,13 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps",
+      "shooter",
+      "ww2",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Battlefield 2042",
@@ -231,7 +322,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Battlefield V",
@@ -239,7 +335,13 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps",
+      "shooter",
+      "ww2",
+      "multiplayer"
+    ]
   },
   {
     "Title": "BEYOND: Two Souls",
@@ -255,7 +357,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "action rpg"
+    ]
   },
   {
     "Title": "Bloodborne",
@@ -263,7 +368,12 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "souls-like",
+      "rpg",
+      "fromsoftware"
+    ]
   },
   {
     "Title": "Borderlands 3",
@@ -271,7 +381,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "looter shooter"
+    ]
   },
   {
     "Title": "Borderlands: The Handsome Collection",
@@ -279,7 +392,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "looter shooter"
+    ]
   },
   {
     "Title": "Bugsnax",
@@ -287,7 +403,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "adventure"
+    ]
   },
   {
     "Title": "Call of Duty",
@@ -295,7 +414,13 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Advanced Warfare",
@@ -303,7 +428,13 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 8
+    "score": 8,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Black Ops 4",
@@ -312,7 +443,13 @@
     "format": "PS4 PS+ digital",
     "mainStory": "played",
     "fullGame": "",
-    "score": 7
+    "score": 7,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Black Ops Cold War",
@@ -320,7 +457,13 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Black Ops III",
@@ -328,7 +471,13 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 8
+    "score": 8,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Ghosts",
@@ -336,7 +485,13 @@
     "own": "n",
     "mainStory": "played",
     "fullGame": "",
-    "score": 8
+    "score": 8,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Infinite Warfare",
@@ -344,7 +499,13 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 7
+    "score": 7,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call Of Duty: Infinite Warfare Jackal Assault VR Experience",
@@ -353,7 +514,13 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Modern Warfare",
@@ -361,7 +528,13 @@
     "format": "PS5 / PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Modern Warfare 2",
@@ -369,7 +542,13 @@
     "own": "y",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Modern Warfare 2 Campaign Remastered",
@@ -377,7 +556,13 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Modern Warfare III",
@@ -385,7 +570,13 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Modern Warfare Remastered",
@@ -393,7 +584,13 @@
     "own": "y",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Vanguard",
@@ -401,7 +598,13 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: Warzone",
@@ -409,7 +612,14 @@
     "own": "y",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "battle royale",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Call of Duty: WWII",
@@ -417,7 +627,13 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 9
+    "score": 9,
+    "keywords": [
+      "cod",
+      "fps",
+      "shooter",
+      "multiplayer"
+    ]
   },
   {
     "Title": "Chernobylite Complete Edition",
@@ -425,7 +641,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "survival",
+      "horror",
+      "sci-fi"
+    ]
   },
   {
     "Title": "Chess Ultra",
@@ -433,7 +654,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "board game"
+    ]
   },
   {
     "Title": "CODE VEIN",
@@ -441,7 +665,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "souls-like",
+      "rpg"
+    ]
   },
   {
     "Title": "Control: Ultimate Edition",
@@ -457,7 +685,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "platformer"
+    ]
   },
   {
     "Title": "Cricket 24",
@@ -465,7 +696,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "sports"
+    ]
   },
   {
     "Title": "CRSED",
@@ -473,7 +707,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "battle royale",
+      "fps"
+    ]
   },
   {
     "Title": "Curse of the Dead Gods",
@@ -481,7 +719,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "roguelike"
+    ]
   },
   {
     "Title": "Cyberpunk 2077",
@@ -489,7 +730,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rpg",
+      "open world",
+      "cd projekt"
+    ]
   },
   {
     "Title": "Darksiders II Deathinitive Edition",
@@ -513,7 +759,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "zombie"
+    ]
   },
   {
     "Title": "Dead by Daylight",
@@ -521,7 +770,13 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "zombie",
+      "asymmetric",
+      "multiplayer",
+      "horror"
+    ]
   },
   {
     "Title": "Dead Space",
@@ -529,7 +784,12 @@
     "own": "n",
     "mainStory": "played",
     "fullGame": "",
-    "score": 9
+    "score": 9,
+    "keywords": [
+      "horror",
+      "survival horror",
+      "sci-fi"
+    ]
   },
   {
     "Title": "Dead Space 2",
@@ -537,7 +797,12 @@
     "own": "n",
     "mainStory": "played",
     "fullGame": "",
-    "score": 10
+    "score": 10,
+    "keywords": [
+      "horror",
+      "survival horror",
+      "sci-fi"
+    ]
   },
   {
     "Title": "Dead Space 3",
@@ -545,7 +810,12 @@
     "own": "n",
     "mainStory": "played",
     "fullGame": "",
-    "score": 9
+    "score": 9,
+    "keywords": [
+      "horror",
+      "survival horror",
+      "sci-fi"
+    ]
   },
   {
     "Title": "DEATH STRANDING DIRECTOR'S CUT",
@@ -553,7 +823,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "kojima"
+    ]
   },
   {
     "Title": "Demeo",
@@ -561,7 +834,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "vr",
+      "board game",
+      "d&d"
+    ]
   },
   {
     "Title": "Demon's Souls",
@@ -569,7 +847,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "souls-like",
+      "rpg",
+      "fromsoftware"
+    ]
   },
   {
     "Title": "Destiny",
@@ -578,7 +861,11 @@
     "format": "PS4 disc",
     "mainStory": "playing",
     "fullGame": "",
-    "score": 7
+    "score": 7,
+    "keywords": [
+      "looter shooter",
+      "mmo"
+    ]
   },
   {
     "Title": "Destiny",
@@ -586,7 +873,11 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "looter shooter",
+      "mmo"
+    ]
   },
   {
     "Title": "Destiny 2",
@@ -595,7 +886,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "looter shooter",
+      "mmo"
+    ]
   },
   {
     "Title": "Destiny: The Taken King",
@@ -604,7 +899,11 @@
     "format": "PS4 disc",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "looter shooter",
+      "mmo"
+    ]
   },
   {
     "Title": "Destroy All Humans! 2",
@@ -612,7 +911,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "open world",
+      "comedy"
+    ]
   },
   {
     "Title": "Detroit: Become Human",
@@ -629,7 +932,11 @@
     "format": "PS5 digital",
     "mainStory": "",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "arpg",
+      "hack and slash"
+    ]
   },
   {
     "Title": "DiRT Rally 2.0",
@@ -637,7 +944,10 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "racing"
+    ]
   },
   {
     "Title": "Dragon Age: The Veilguard",
@@ -645,7 +955,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rpg",
+      "bioware"
+    ]
   },
   {
     "Title": "Draw Slasher",
@@ -661,7 +975,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "racing"
+    ]
   },
   {
     "Title": "Drums Rock",
@@ -670,7 +987,12 @@
     "format": "PS5 PSVR2 digital",
     "mainStory": "",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "music",
+      "rhythm",
+      "vr"
+    ]
   },
   {
     "Title": "Dying Light 2 Stay Human PS5",
@@ -678,11 +1000,21 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "zombie",
+      "survival",
+      "parkour"
+    ]
   },
   {
     "Title": "EA SPORTS FC 26",
     "slug": "ea-sports-fc-26",
+    "keywords": [
+      "soccer",
+      "sports",
+      "fifa"
+    ],
     "own": "y",
     "format": "PS5 digital",
     "mainStory": "",
@@ -699,7 +1031,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "hockey",
+      "sports"
+    ]
   },
   {
     "Title": "EA SPORTS NHL 26",
@@ -711,7 +1047,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "hockey",
+      "sports"
+    ]
   },
   {
     "Title": "EA SPORTS FC 24 (EA Sports Football Club 24)",
@@ -719,7 +1059,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "soccer",
+      "fifa"
+    ]
   },
   {
     "Title": "ELDEN RING",
@@ -727,7 +1071,12 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "souls-like",
+      "rpg",
+      "fromsoftware"
+    ]
   },
   {
     "Title": "Elder Scrolls Online",
@@ -735,7 +1084,12 @@
     "own": "y",
     "mainStory": "playing",
     "fullGame": "",
-    "score": 7
+    "score": 7,
+    "keywords": [
+      "rpg",
+      "mmo",
+      "bethesda"
+    ]
   },
   {
     "Title": "ENDER LILIES: Quietus of the Knights",
@@ -743,7 +1097,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "metroidvania"
+    ]
   },
   {
     "Title": "Endling - Extinction is Forever",
@@ -760,7 +1117,10 @@
     "format": "PS5 PSVR2 digital",
     "mainStory": "",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "simulation"
+    ]
   },
   {
     "Title": "Erica",
@@ -768,7 +1128,11 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 7
+    "score": 7,
+    "keywords": [
+      "narrative",
+      "choices"
+    ]
   },
   {
     "Title": "Evil Dead: The Game",
@@ -776,7 +1140,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "co-op"
+    ]
   },
   {
     "Title": "Evil West",
@@ -784,7 +1152,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "western"
+    ]
   },
   {
     "Title": "Fallout 4",
@@ -792,7 +1164,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rpg",
+      "bethesda"
+    ]
   },
   {
     "Title": "Fallout 76",
@@ -800,7 +1176,13 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rpg",
+      "mmo",
+      "online",
+      "bethesda"
+    ]
   },
   {
     "Title": "Farpoint",
@@ -808,7 +1190,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "vr",
+      "fps"
+    ]
   },
   {
     "Title": "FIFA 22",
@@ -816,7 +1202,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "soccer",
+      "sports"
+    ]
   },
   {
     "Title": "FINAL FANTASY VII REMAKE",
@@ -824,7 +1214,13 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rpg",
+      "jrpg",
+      "action rpg",
+      "remaster"
+    ]
   },
   {
     "Title": "FINAL FANTASY XV",
@@ -832,7 +1228,12 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rpg",
+      "jrpg",
+      "action rpg"
+    ]
   },
   {
     "Title": "Five Nights at Freddy's: Help Wanted - Full Time Edition",
@@ -840,7 +1241,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "fnaf",
+      "vr"
+    ]
   },
   {
     "Title": "Five Nights at Freddy's: Help Wanted 2",
@@ -848,7 +1254,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "fnaf",
+      "vr"
+    ]
   },
   {
     "Title": "Five Nights at Freddy's: Security Breach",
@@ -856,7 +1267,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "fnaf"
+    ]
   },
   {
     "Title": "Fortnite",
@@ -864,7 +1279,10 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "battle royale"
+    ]
   },
   {
     "Title": "GAUNTLET: SLAYER EDITION",
@@ -872,7 +1290,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "arcade",
+      "co-op",
+      "hack and slash"
+    ]
   },
   {
     "Title": "Ghost of Tsushima DIRECTOR'S CUT",
@@ -880,7 +1303,13 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "samurai",
+      "open world",
+      "japan",
+      "sucker punch"
+    ]
   },
   {
     "Title": "Ghostrunner",
@@ -888,7 +1317,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cyberpunk",
+      "parkour"
+    ]
   },
   {
     "Title": "God of War",
@@ -896,7 +1329,10 @@
     "own": "y",
     "mainStory": "complete",
     "fullGame": "One valkyrie left",
-    "score": 10
+    "score": 10,
+    "keywords": [
+      "santa monica"
+    ]
   },
   {
     "Title": "God of War III",
@@ -904,7 +1340,11 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 8
+    "score": 8,
+    "keywords": [
+      "santa monica",
+      "greek"
+    ]
   },
   {
     "Title": "God of War III Remastered",
@@ -912,7 +1352,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "santa monica",
+      "greek"
+    ]
   },
   {
     "Title": "God of War Ragnarök",
@@ -920,7 +1364,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "santa monica",
+      "norse"
+    ]
   },
   {
     "Title": "Grand Theft Auto III - The Definitive Edition",
@@ -928,7 +1376,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "gta",
+      "open world",
+      "rockstar"
+    ]
   },
   {
     "Title": "Grand Theft Auto V",
@@ -937,7 +1390,12 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "gta",
+      "open world",
+      "rockstar"
+    ]
   },
   {
     "Title": "Green Hell",
@@ -945,7 +1403,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "survival"
+    ]
   },
   {
     "Title": "Gunjack",
@@ -953,7 +1414,10 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "vr"
+    ]
   },
   {
     "Title": "Harry Potter: Quidditch Champions",
@@ -961,7 +1425,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "sports"
+    ]
   },
   {
     "Title": "Heavy Rain",
@@ -969,7 +1436,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "narrative",
+      "choices"
+    ]
   },
   {
     "Title": "Hell Let Loose",
@@ -977,7 +1448,12 @@
     "format": "PS5 PS+ digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps",
+      "ww2",
+      "realistic"
+    ]
   },
   {
     "Title": "Here They Lie",
@@ -985,7 +1461,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "vr",
+      "horror"
+    ]
   },
   {
     "Title": "High On Life",
@@ -993,7 +1473,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps",
+      "comedy"
+    ]
   },
   {
     "Title": "HITMAN",
@@ -1001,7 +1485,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "stealth",
+      "assassin",
+      "io interactive"
+    ]
   },
   {
     "Title": "Hogwarts Legacy",
@@ -1010,7 +1499,10 @@
     "format": "PS5 digital",
     "mainStory": "played",
     "fullGame": "",
-    "score": 9
+    "score": 9,
+    "keywords": [
+      "harry potter"
+    ]
   },
   {
     "Title": "Hollow Knight",
@@ -1019,7 +1511,10 @@
     "format": "PS4 PS+ digital",
     "mainStory": "playing",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "metroidvania"
+    ]
   },
   {
     "Title": "Hood: Outlaws & Legends",
@@ -1027,7 +1522,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "star wars",
+      "open world"
+    ]
   },
   {
     "Title": "Horizon Call of the Mountain",
@@ -1035,7 +1534,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "vr",
+      "guerrilla"
+    ]
   },
   {
     "Title": "Horizon Forbidden West",
@@ -1043,7 +1546,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "guerrilla"
+    ]
   },
   {
     "Title": "Horizon Zero Dawn: Complete Edition",
@@ -1051,7 +1557,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "guerrilla"
+    ]
   },
   {
     "Title": "HUSTLE KINGS FREE TO PLAY",
@@ -1059,7 +1568,13 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "pool",
+      "billiards",
+      "sports",
+      "f2p"
+    ]
   },
   {
     "Title": "inFAMOUS Second Son",
@@ -1067,7 +1582,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "sucker punch"
+    ]
   },
   {
     "Title": "INVASION!",
@@ -1083,7 +1601,12 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "co-op",
+      "couch co-op",
+      "hazelight"
+    ]
   },
   {
     "Title": "Jak and Daxter: The Precursor Legacy",
@@ -1091,7 +1614,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "platformer"
+    ]
   },
   {
     "Title": "Jurassic World Aftermath Collection",
@@ -1099,7 +1625,13 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "jurassic park",
+      "dinosaur",
+      "vr",
+      "horror"
+    ]
   },
   {
     "Title": "Jurassic World Evolution 2",
@@ -1107,7 +1639,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "jurassic park",
+      "dinosaur"
+    ]
   },
   {
     "Title": "Just Cause 4",
@@ -1115,7 +1651,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "open world"
+    ]
   },
   {
     "Title": "Killing Floor 3",
@@ -1123,7 +1662,12 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps",
+      "horror",
+      "co-op"
+    ]
   },
   {
     "Title": "King's Quest",
@@ -1131,7 +1675,10 @@
     "own": "y",
     "mainStory": "playing",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "adventure"
+    ]
   },
   {
     "Title": "KINGDOM HEARTS VR Experience",
@@ -1139,7 +1686,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "action rpg",
+      "disney"
+    ]
   },
   {
     "Title": "Kingdoms of Amalur: Re-Reckoning",
@@ -1147,7 +1698,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rpg"
+    ]
   },
   {
     "Title": "Kingdoms of Amalur: Reckoning",
@@ -1156,7 +1710,10 @@
     "format": "PS4 PS+ digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rpg"
+    ]
   },
   {
     "Title": "Lara Croft and the Temple of Osiris",
@@ -1164,7 +1721,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "tomb raider"
+    ]
   },
   {
     "Title": "LEGO Harry Potter Collection",
@@ -1188,7 +1748,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "puzzle-platformer"
+    ]
   },
   {
     "Title": "Little Nightmares II",
@@ -1196,7 +1760,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "puzzle-platformer"
+    ]
   },
   {
     "Title": "Lords of the Fallen",
@@ -1204,7 +1772,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "souls-like",
+      "rpg"
+    ]
   },
   {
     "Title": "Mad Max",
@@ -1213,7 +1785,10 @@
     "format": "PS4 digital",
     "mainStory": "played",
     "fullGame": "",
-    "score": 8
+    "score": 8,
+    "keywords": [
+      "open world"
+    ]
   },
   {
     "Title": "Madden NFL 18",
@@ -1221,7 +1796,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "football",
+      "sports"
+    ]
   },
   {
     "Title": "Madison VR",
@@ -1230,7 +1809,10 @@
     "format": "PS5 PSVR2 digital",
     "mainStory": "",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror"
+    ]
   },
   {
     "Title": "Mafia II: Definitive Edition",
@@ -1238,7 +1820,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "open world"
+    ]
   },
   {
     "Title": "Mafia: Definitive Edition",
@@ -1246,7 +1831,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "open world"
+    ]
   },
   {
     "Title": "Maneater",
@@ -1254,7 +1842,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "open world"
+    ]
   },
   {
     "Title": "Maquette",
@@ -1262,7 +1853,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "puzzle"
+    ]
   },
   {
     "Title": "Marvel's Spider-Man",
@@ -1298,7 +1892,12 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rpg",
+      "sci-fi",
+      "bioware"
+    ]
   },
   {
     "Title": "Meet Your Maker: Scorched Necropolis Collection",
@@ -1306,7 +1905,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "builder",
+      "pvp"
+    ]
   },
   {
     "Title": "METAL GEAR SOLID V: THE DEFINITIVE EXPERIENCE",
@@ -1314,7 +1917,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "stealth",
+      "kojima"
+    ]
   },
   {
     "Title": "Metal: Hellsinger",
@@ -1331,7 +1938,10 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "lord of the rings"
+    ]
   },
   {
     "Title": "Middle-Earth: Shadow of War",
@@ -1339,11 +1949,18 @@
     "own": "y",
     "mainStory": "playing",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "lord of the rings"
+    ]
   },
   {
     "Title": "MLB 14: The Show",
     "slug": "mlb-14-the-show",
+    "keywords": [
+      "baseball",
+      "sports"
+    ],
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
@@ -1351,6 +1968,10 @@
   },
   {
     "Title": "MLB THE SHOW 17",
+    "keywords": [
+      "baseball",
+      "sports"
+    ],
     "own": "y",
     "format": "PS digital",
     "mainStory": "unplayed",
@@ -1359,6 +1980,10 @@
   },
   {
     "Title": "MLB The Show 18",
+    "keywords": [
+      "baseball",
+      "sports"
+    ],
     "own": "y",
     "format": "PS digital",
     "mainStory": "unplayed",
@@ -1371,7 +1996,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "baseball",
+      "sports"
+    ]
   },
   {
     "Title": "MLB The Show 24",
@@ -1379,7 +2008,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "baseball",
+      "sports"
+    ]
   },
   {
     "Title": "Monster Energy Supercross - The Official Videogame",
@@ -1387,7 +2020,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "motocross",
+      "racing",
+      "sports"
+    ]
   },
   {
     "Title": "MONSTER HUNTER: WORLD",
@@ -1395,7 +2033,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "co-op"
+    ]
   },
   {
     "Title": "Mortal Kombat X",
@@ -1403,7 +2044,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fighting"
+    ]
   },
   {
     "Title": "My First Gran Turismo",
@@ -1411,7 +2055,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "racing"
+    ]
   },
   {
     "Title": "NBA 2K20",
@@ -1419,7 +2066,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "basketball",
+      "sports"
+    ]
   },
   {
     "Title": "NBA 2K23",
@@ -1427,7 +2078,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "basketball",
+      "sports"
+    ]
   },
   {
     "Title": "NBA 2K25",
@@ -1436,7 +2091,11 @@
     "format": "PS5 digital",
     "mainStory": "",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "basketball",
+      "sports"
+    ]
   },
   {
     "Title": "NBA LIVE 18: The One Edition",
@@ -1444,7 +2103,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "basketball",
+      "sports"
+    ]
   },
   {
     "Title": "Nioh",
@@ -1452,7 +2115,13 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "souls-like",
+      "rpg",
+      "japan",
+      "samurai"
+    ]
   },
   {
     "Title": "NIOH 2",
@@ -1460,7 +2129,13 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "souls-like",
+      "rpg",
+      "japan",
+      "samurai"
+    ]
   },
   {
     "Title": "Oddworld: Soulstorm",
@@ -1483,7 +2158,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror"
+    ]
   },
   {
     "Title": "Payday 3 Pre-order Edition",
@@ -1491,7 +2169,12 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "heist",
+      "co-op",
+      "fps"
+    ]
   },
   {
     "Title": "Persona 5",
@@ -1499,11 +2182,21 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "jrpg",
+      "turn based",
+      "atlus",
+      "social sim"
+    ]
   },
   {
     "Title": "PGA Tour 2K21",
     "slug": "pga-tour-2k21",
+    "keywords": [
+      "golf",
+      "sports"
+    ],
     "own": "y",
     "format": "PS4 PS+ digital",
     "mainStory": "played",
@@ -1512,6 +2205,10 @@
   },
   {
     "Title": "PGA TOUR 2K23",
+    "keywords": [
+      "golf",
+      "sports"
+    ],
     "own": "y",
     "format": "PS5 digital",
     "mainStory": "played",
@@ -1520,6 +2217,10 @@
   },
   {
     "Title": "PGA TOUR 2K25",
+    "keywords": [
+      "golf",
+      "sports"
+    ],
     "own": "y",
     "format": "PS5 digital",
     "mainStory": "playing",
@@ -1540,7 +2241,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "arcade"
+    ]
   },
   {
     "Title": "Pinball Heroes",
@@ -1548,7 +2252,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "arcade"
+    ]
   },
   {
     "Title": "Pistol Whip",
@@ -1556,7 +2263,13 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rhythm",
+      "music",
+      "fps",
+      "vr"
+    ]
   },
   {
     "Title": "Planet Coaster: Console Edition",
@@ -1564,7 +2277,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "roller coaster",
+      "simulation"
+    ]
   },
   {
     "Title": "Playstation VR demo disc",
@@ -1589,7 +2306,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cards"
+    ]
   },
   {
     "Title": "PROMINENCE POKER",
@@ -1597,7 +2317,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "cards"
+    ]
   },
   {
     "Title": "Q*Bert: Rebooted",
@@ -1605,7 +2328,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "arcade"
+    ]
   },
   {
     "Title": "Ratchet & Clank",
@@ -1613,7 +2339,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "platformer",
+      "insomniac"
+    ]
   },
   {
     "Title": "Red Dead Redemption 2",
@@ -1622,7 +2352,12 @@
     "format": "PS4 digital",
     "mainStory": "playing",
     "fullGame": "",
-    "score": 10
+    "score": 10,
+    "keywords": [
+      "western",
+      "open world",
+      "rockstar"
+    ]
   },
   {
     "Title": "Remnant: From the Ashes",
@@ -1630,7 +2365,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "souls-like",
+      "co-op"
+    ]
   },
   {
     "Title": "RESIDENT EVIL 2",
@@ -1638,7 +2377,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror"
+    ]
   },
   {
     "Title": "Resident Evil 4",
@@ -1646,7 +2388,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror"
+    ]
   },
   {
     "Title": "RESIDENT EVIL 7 biohazard",
@@ -1654,7 +2399,11 @@
     "format": "PS5 / PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "survival horror"
+    ]
   },
   {
     "Title": "RESIDENT EVIL REVELATIONS 2",
@@ -1662,7 +2411,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror"
+    ]
   },
   {
     "Title": "Resident Evil Village",
@@ -1670,7 +2422,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "survival horror"
+    ]
   },
   {
     "Title": "Returnal",
@@ -1678,7 +2434,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "roguelike",
+      "sci-fi"
+    ]
   },
   {
     "Title": "RIGS: Machine Combat League",
@@ -1686,7 +2446,10 @@
     "own": "y",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "vr"
+    ]
   },
   {
     "Title": "Rise of the Tomb Raider",
@@ -1728,7 +2491,11 @@
     "format": "PS4 disc",
     "mainStory": "playing",
     "fullGame": "",
-    "score": 9
+    "score": 9,
+    "keywords": [
+      "music",
+      "rhythm"
+    ]
   },
   {
     "Title": "Rocksmith 2014 Edition",
@@ -1737,7 +2504,11 @@
     "format": "PS5 / PS4 digital",
     "mainStory": "playing",
     "fullGame": "",
-    "score": 8
+    "score": 8,
+    "keywords": [
+      "music",
+      "rhythm"
+    ]
   },
   {
     "Title": "Rocksmith+",
@@ -1745,7 +2516,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "music",
+      "rhythm"
+    ]
   },
   {
     "Title": "Rollercoaster Dreams",
@@ -1753,11 +2528,19 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "roller coaster",
+      "simulation"
+    ]
   },
   {
     "Title": "Rory McIlroy PGA Tour",
     "slug": "ea-sports-rory-mcilroy-pga-tour",
+    "keywords": [
+      "golf",
+      "sports"
+    ],
     "own": "y",
     "format": "PS4 digital",
     "mainStory": "played",
@@ -1770,7 +2553,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "platformer",
+      "little big planet"
+    ]
   },
   {
     "Title": "SHADOW OF THE COLOSSUS",
@@ -1778,7 +2565,10 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "team ico"
+    ]
   },
   {
     "Title": "Shadow of the Tomb Raider",
@@ -1795,7 +2585,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "survival horror",
+      "sci-fi"
+    ]
   },
   {
     "Title": "SILENT HILL: The Short Message",
@@ -1803,7 +2597,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror"
+    ]
   },
   {
     "Title": "Sniper Elite 4",
@@ -1811,7 +2608,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "stealth",
+      "ww2",
+      "third person"
+    ]
   },
   {
     "Title": "SOMA",
@@ -1819,7 +2621,12 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "survival horror",
+      "sci-fi"
+    ]
   },
   {
     "Title": "SONIC FORCES",
@@ -1835,7 +2642,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "vr"
+    ]
   },
   {
     "Title": "South Park: The Fractured But Whole",
@@ -1844,7 +2654,11 @@
     "format": "PS4 digital",
     "mainStory": "played",
     "fullGame": "",
-    "score": 9
+    "score": 9,
+    "keywords": [
+      "comedy",
+      "rpg"
+    ]
   },
   {
     "Title": "South Park: The Stick of Truth",
@@ -1853,7 +2667,11 @@
     "format": "PS4 digital",
     "mainStory": "played",
     "fullGame": "",
-    "score": 8
+    "score": 8,
+    "keywords": [
+      "comedy",
+      "rpg"
+    ]
   },
   {
     "Title": "SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated",
@@ -1886,7 +2704,10 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps"
+    ]
   },
   {
     "Title": "Star Wars Battlefront II",
@@ -1895,7 +2716,10 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps"
+    ]
   },
   {
     "Title": "STAR WARS Demolition",
@@ -1903,7 +2727,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "racing"
+    ]
   },
   {
     "Title": "STAR WARS Jedi: Fallen Order",
@@ -1928,7 +2755,10 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 8
+    "score": 8,
+    "keywords": [
+      "open world"
+    ]
   },
   {
     "Title": "STAR WARS The Clone Wars",
@@ -1945,7 +2775,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "flight"
+    ]
   },
   {
     "Title": "Star Wars: Tales from the Galaxy's Edge - Enhanced Edition",
@@ -1953,7 +2786,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "vr"
+    ]
   },
   {
     "Title": "STEEP",
@@ -1961,7 +2797,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "skiing",
+      "snowboarding",
+      "sports"
+    ]
   },
   {
     "Title": "Stern Pinball Arcade",
@@ -1977,7 +2818,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "survival"
+    ]
   },
   {
     "Title": "Subnautica: Below Zero",
@@ -1985,7 +2829,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "survival"
+    ]
   },
   {
     "Title": "Subside",
@@ -1993,7 +2840,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "vr"
+    ]
   },
   {
     "Title": "Suicide Squad: Kill the Justice League",
@@ -2001,7 +2851,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "superhero",
+      "dc"
+    ]
   },
   {
     "Title": "Synapse",
@@ -2009,7 +2863,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "vr",
+      "fps"
+    ]
   },
   {
     "Title": "Tails of Iron",
@@ -2017,7 +2875,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "souls-like",
+      "rpg"
+    ]
   },
   {
     "Title": "Team Sonic Racing",
@@ -2034,7 +2896,10 @@
     "format": "PS4 PS+ digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "sports"
+    ]
   },
   {
     "Title": "TERA",
@@ -2042,7 +2907,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "mmo",
+      "rpg"
+    ]
   },
   {
     "Title": "The Council",
@@ -2050,7 +2919,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "narrative",
+      "rpg"
+    ]
   },
   {
     "Title": "The Dark Pictures Anthology: The Devil in Me PS4 & PS5",
@@ -2058,7 +2931,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "narrative",
+      "choices"
+    ]
   },
   {
     "Title": "The Elder Scrolls IV: Oblivion",
@@ -2066,7 +2944,11 @@
     "own": "n",
     "mainStory": "played",
     "fullGame": "",
-    "score": 10
+    "score": 10,
+    "keywords": [
+      "rpg",
+      "bethesda"
+    ]
   },
   {
     "Title": "The Elder Scrolls Online: Tamriel Unlimited",
@@ -2074,7 +2956,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rpg",
+      "mmo",
+      "bethesda"
+    ]
   },
   {
     "Title": "The Elder Scrolls V: Skyrim",
@@ -2083,7 +2970,11 @@
     "psvr": "y",
     "mainStory": "playing",
     "fullGame": "",
-    "score": 10
+    "score": 10,
+    "keywords": [
+      "rpg",
+      "bethesda"
+    ]
   },
   {
     "Title": "The Elder Scrolls V: Skyrim Special Edition",
@@ -2091,7 +2982,11 @@
     "format": "PS5 / PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rpg",
+      "bethesda"
+    ]
   },
   {
     "Title": "THE EVIL WITHIN",
@@ -2099,7 +2994,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror"
+    ]
   },
   {
     "Title": "The Exorcist: Legion VR",
@@ -2107,7 +3005,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror"
+    ]
   },
   {
     "Title": "The Four Kings Casino and Slots",
@@ -2123,7 +3024,10 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "team ico"
+    ]
   },
   {
     "Title": "The Last of Us",
@@ -2132,7 +3036,10 @@
     "format": "PS5 digital",
     "mainStory": "played",
     "fullGame": "",
-    "score": 10
+    "score": 10,
+    "keywords": [
+      "naughty dog"
+    ]
   },
   {
     "Title": "The Last of Us Part I",
@@ -2140,7 +3047,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "naughty dog"
+    ]
   },
   {
     "Title": "The Last Of Us Remastered",
@@ -2148,7 +3058,10 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "naughty dog"
+    ]
   },
   {
     "Title": "The Last of Us: Left Behind",
@@ -2156,7 +3069,10 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 8
+    "score": 8,
+    "keywords": [
+      "naughty dog"
+    ]
   },
   {
     "Title": "The Last of Us: Part II",
@@ -2165,7 +3081,10 @@
     "format": "PS5 digital",
     "mainStory": "played",
     "fullGame": "complete",
-    "score": 9
+    "score": 9,
+    "keywords": [
+      "naughty dog"
+    ]
   },
   {
     "Title": "The Order: 1886",
@@ -2183,7 +3102,12 @@
     "psvr": "y",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "vr",
+      "roguelike"
+    ]
   },
   {
     "Title": "THE PLAYROOM VR",
@@ -2199,7 +3123,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "narrative",
+      "comedy"
+    ]
   },
   {
     "Title": "The Swapper",
@@ -2208,7 +3136,11 @@
     "format": "PS4 digital",
     "mainStory": "playing",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "puzzle",
+      "platformer"
+    ]
   },
   {
     "Title": "The Texas Chain Saw Massacre",
@@ -2217,7 +3149,11 @@
     "format": "PS5 digital",
     "mainStory": "",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "slasher"
+    ]
   },
   {
     "Title": "The Walking Dead: Saints & Sinners",
@@ -2226,7 +3162,11 @@
     "format": "PS4 PS+ digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "zombie"
+    ]
   },
   {
     "Title": "The Witcher 3: Wild Hunt",
@@ -2243,7 +3183,11 @@
         "Blood and Wine": "done"
       }
     ],
-    "score": 10
+    "score": 10,
+    "keywords": [
+      "rpg",
+      "cd projekt"
+    ]
   },
   {
     "Title": "Thief",
@@ -2251,7 +3195,10 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "stealth"
+    ]
   },
   {
     "Title": "Thronebreaker: The Witcher Tales",
@@ -2259,7 +3206,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "rpg",
+      "cd projekt"
+    ]
   },
   {
     "Title": "Tiny Tina's Assault on Dragon Keep: A Wonderlands One-shot Adventure",
@@ -2267,7 +3218,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "borderlands",
+      "looter shooter"
+    ]
   },
   {
     "Title": "Titanfall 2",
@@ -2275,7 +3230,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps",
+      "shooter",
+      "mechs"
+    ]
   },
   {
     "Title": "Tom Clancy's Rainbow Six Extraction",
@@ -2283,7 +3243,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps",
+      "tactical",
+      "shooter"
+    ]
   },
   {
     "Title": "Tom Clancy's The Division",
@@ -2291,7 +3256,10 @@
     "own": "y",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "looter shooter"
+    ]
   },
   {
     "Title": "Tomb Raider",
@@ -2325,7 +3293,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "racing"
+    ]
   },
   {
     "Title": "Tribes of Midgard Deluxe Edition",
@@ -2333,7 +3304,11 @@
     "format": "PS5 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "survival",
+      "co-op"
+    ]
   },
   {
     "Title": "UFC 4",
@@ -2341,7 +3316,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "mma",
+      "fighting",
+      "sports"
+    ]
   },
   {
     "Title": "Ultros",
@@ -2349,7 +3329,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "metroidvania"
+    ]
   },
   {
     "Title": "Uncharted 2: Among Thieves",
@@ -2357,7 +3340,10 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 9
+    "score": 9,
+    "keywords": [
+      "naughty dog"
+    ]
   },
   {
     "Title": "Uncharted 3: Drake's Deception",
@@ -2365,7 +3351,10 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 10
+    "score": 10,
+    "keywords": [
+      "naughty dog"
+    ]
   },
   {
     "Title": "Uncharted 4: A Thief's End",
@@ -2373,7 +3362,11 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 10
+    "score": 10,
+    "keywords": [
+      "stealth",
+      "naughty dog"
+    ]
   },
   {
     "Title": "UNCHARTED The Nathan Drake Collection",
@@ -2381,7 +3374,10 @@
     "format": "PS4 digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "naughty dog"
+    ]
   },
   {
     "Title": "Uncharted: Drake's Fortune",
@@ -2389,7 +3385,10 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 8
+    "score": 8,
+    "keywords": [
+      "naughty dog"
+    ]
   },
   {
     "Title": "UNCHARTED: Legacy of Thieves Collection",
@@ -2397,7 +3396,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "naughty dog"
+    ]
   },
   {
     "Title": "Uncharted: The Lost Legacy",
@@ -2405,7 +3407,10 @@
     "own": "y",
     "mainStory": "played",
     "fullGame": "",
-    "score": 9
+    "score": 9,
+    "keywords": [
+      "naughty dog"
+    ]
   },
   {
     "Title": "Undisputed",
@@ -2413,7 +3418,12 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "boxing",
+      "fighting",
+      "sports"
+    ]
   },
   {
     "Title": "Until Dawn",
@@ -2422,7 +3432,11 @@
     "format": "PS4 digital",
     "mainStory": "played",
     "fullGame": "",
-    "score": 7
+    "score": 7,
+    "keywords": [
+      "horror",
+      "choices"
+    ]
   },
   {
     "Title": "Until Dawn: Rush of Blood",
@@ -2431,7 +3445,11 @@
     "format": "PS4 digital",
     "mainStory": "toplay",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror",
+      "choices"
+    ]
   },
   {
     "Title": "Until You Fall",
@@ -2440,7 +3458,11 @@
     "psvr": "y",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "vr",
+      "roguelike"
+    ]
   },
   {
     "Title": "VR Ping Pong",
@@ -2448,11 +3470,19 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "sports"
+    ]
   },
   {
     "Title": "Walkabout Mini Golf",
     "slug": "walkabout-mini-golf-vr",
+    "keywords": [
+      "golf",
+      "sports",
+      "vr"
+    ],
     "own": "y",
     "format": "PS5 PSVR2 digital",
     "mainStory": "played",
@@ -2473,7 +3503,10 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "horror"
+    ]
   },
   {
     "Title": "Weird West",
@@ -2489,7 +3522,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps",
+      "shooter"
+    ]
   },
   {
     "Title": "Wolfenstein: The Old Blood",
@@ -2497,7 +3534,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps",
+      "shooter"
+    ]
   },
   {
     "Title": "Wolfenstein: Youngblood",
@@ -2505,7 +3546,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "fps",
+      "shooter"
+    ]
   },
   {
     "Title": "Wreckfest: Drive Hard. Die Last.",
@@ -2513,7 +3558,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "racing",
+      "demolition"
+    ]
   },
   {
     "Title": "WUCHANG: Fallen Feathers",
@@ -2521,7 +3570,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "souls-like",
+      "rpg"
+    ]
   },
   {
     "Title": "WWE 2K25",
@@ -2529,7 +3582,11 @@
     "format": "PS digital",
     "mainStory": "unplayed",
     "fullGame": "",
-    "score": 0
+    "score": 0,
+    "keywords": [
+      "wrestling",
+      "sports"
+    ]
   },
   {
     "Title": "Zombie Army 4: Dead War",

@@ -121,6 +121,7 @@ export function normalizeListItem(item, index) {
     plot: plot && plot !== "N/A" ? String(plot) : "",
     genreHint: genre && genre !== "N/A" ? String(genre) : "",
     platformHint: platformsFromItem(item),
+    keywords: keywordsFromItem(item),
   };
 }
 
@@ -147,6 +148,18 @@ function parsePreferJson(item) {
   if (item.preferJson === true) return true;
   const mode = String(item.rawg ?? "").trim().toLowerCase();
   return mode === "prefer-json" || mode === "preferjson";
+}
+
+function keywordsFromItem(item) {
+  const raw = item.keywords ?? item.tags ?? item.keyword ?? "";
+  if (Array.isArray(raw)) {
+    return raw.map((word) => String(word).trim()).filter(Boolean);
+  }
+  if (!raw || raw === "N/A") return [];
+  return String(raw)
+    .split(",")
+    .map((word) => word.trim())
+    .filter(Boolean);
 }
 
 function platformsFromItem(item) {
@@ -329,6 +342,7 @@ function keepCdnPersonal(cdn, account) {
     platformHint: cdn.platformHint?.length ? cdn.platformHint : account.platformHint,
     skipRawg: cdn.skipRawg || account.skipRawg,
     preferJson: cdn.preferJson || account.preferJson,
+    keywords: cdn.keywords?.length ? cdn.keywords : account.keywords,
     status: cdn.status,
     notes: cdn.notes,
     format: cdn.format,
@@ -634,6 +648,7 @@ function mergeGame(personal, rawg) {
     format: personal.format,
     score: personal.score,
     own: personal.own,
+    keywords: personal.keywords || [],
     rawgError: !rawg && !personal.skipRawg,
     skipRawg: Boolean(personal.skipRawg),
     needsMeta: gameNeedsRawgFetch(personal, rawg),
